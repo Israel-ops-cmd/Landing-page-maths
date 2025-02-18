@@ -1,0 +1,96 @@
+html{
+    font-size: 16px;
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    background-color: rgb(211, 209, 209);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+#titulo > h1 {
+    font-weight: 800;
+}
+
+#principal {
+    background-color: rgb(211, 209, 209);
+    display: flex;
+    flex-direction: row;
+}
+
+#imagem {
+    display: flex;
+    justify-content: start;
+    margin-left: 12rem;
+    flex-direction: row;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+}
+
+#prof {
+    background-color: rgb(255, 160, 83);
+    color: white;
+    border-radius: .7rem;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 20rem;
+    margin-left: 10rem;
+    padding: .5rem;
+    margin-top: 5rem;
+}
+
+#frase {
+    margin-left: 3.5rem;
+}
+
+#title-info {
+    color: rgb(7, 7, 87);
+    margin-top: 3rem;
+    margin-left: 10rem;
+    font-weight: 800;
+    line-height: 80%;
+    font-size: 2rem;
+}
+
+#idealizacao{
+    background-color: rgb(7, 7, 87);
+    margin-top: 3rem;
+    border-radius: 1rem;
+    color: rgb(255, 160, 83);
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 8rem;
+    font-weight: 550;
+}
+
+#idealizacao > h3 {
+    padding-left: 7rem;
+    color: white;
+    font-weight: 800;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+li::before {
+    content: "\2714";
+    margin-right: 0.5rem;
+}
