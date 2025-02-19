@@ -285,9 +285,10 @@ footer{
 
     #prof {
         margin-left: 0;
-        width: 100%;
+        width: 80%;
         margin-top: 1rem;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-right: 3rem;
         margin: 0 auto;
     }
 
@@ -295,6 +296,7 @@ footer{
         margin-left: 0;
         margin-top: 1rem;
         font-size: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     #title-info {
@@ -311,7 +313,8 @@ footer{
         padding-right: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        width: 100%;
+        width: 80%;
+        margin: auto;
         margin-bottom: 2rem;
     }
 
