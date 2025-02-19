@@ -45,13 +45,17 @@ html{
     font-size: 1.5rem;
     height: 2rem;
     width: 20rem;
-    margin-left: 10rem;
+    margin-left: 11.2rem;
     padding: .5rem;
     margin-top: 5rem;
 }
 
 #frase {
     margin-left: 3.5rem;
+}
+
+#investimento {
+    margin-left: 3.3rem;
 }
 
 #title-info {
@@ -86,11 +90,149 @@ ul{
     list-style: none;
 }
 
-li {
+li{
     margin-top: 1rem;
 }
 
-li::before {
+#lista > li::before {
     content: "\2714";
     margin-right: 0.5rem;
+    color: white;
 }
+
+
+#menuinformacional > ul{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8rem;
+    list-style: none;
+    background-color: rgb(7, 7, 87);
+    color: rgb(255, 160, 83);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#livro::before {
+    content: "\1F4D6"
+}
+
+#bloco::before {
+    content: "\1F4DD"
+}
+
+#foguete::before {
+    content: "\1F680"
+}
+
+#sumario{
+    background-color: rgb(211, 209, 209);
+}
+
+#sumario > h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    color: black;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+#modulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    color: rgb(54, 54, 54);
+    font-size: 1.2rem;
+}
+
+.mod {
+    text-align: center;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+}
+
+#one{
+    margin-left: 3rem;
+}
+
+#two{
+    margin-left: 3rem;
+}
+
+.point{
+    margin-top: 3rem;
+}
+
+#modulos ul{
+    list-style: disc;
+}
+
+#pagamento {
+    background-color: rgb(7, 7, 87);
+    text-align: center;
+}
+
+#pagamento h3 {
+    padding-top: 2rem;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+#pagamento h2{
+    padding-top: 1rem;
+    color: rgb(255, 160, 83);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#pagamento h4 {
+    padding-top: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#pg {
+    padding-top: 0rem;
+    color: rgb(255, 160, 83);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+button{
+    background-color: #1ca31c;
+    margin-top: 1rem;
+    width: 15.6rem;
+    height: 2.8rem;
+    border: 0;
+    border-radius: .5rem;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+button:hover {
+    background-color: #32CD32;
+    color: #FFFFFF;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px #05103081;
+    transition-duration: 0.5s;
+}
+
+
+
