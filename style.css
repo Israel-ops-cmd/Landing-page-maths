@@ -9,7 +9,7 @@ html{
 }
 
 #titulo {
-    background-color: rgb(211, 209, 209);
+    background-color: rgba(255,167,41,255);
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -18,10 +18,11 @@ html{
 
 #titulo > h1 {
     font-weight: 800;
+    color: rgba(20,11,42,255);
 }
 
 #principal {
-    background-color: rgb(211, 209, 209);
+    background-color: rgba(255,167,41,255);
     display: flex;
     flex-direction: row;
 }
@@ -29,8 +30,12 @@ html{
 #imagem {
     display: flex;
     justify-content: start;
-    margin-left: 12rem;
     flex-direction: row;
+    margin-left: 12rem;
+}
+
+img {
+    width: 100%;
 }
 
 #right {
@@ -39,7 +44,7 @@ html{
 }
 
 #prof {
-    background-color: rgb(255, 160, 83);
+    background-color: rgba(0,41,95,255);
     color: white;
     border-radius: .7rem;
     font-size: 1.5rem;
@@ -48,30 +53,27 @@ html{
     margin-left: 11.2rem;
     padding: .5rem;
     margin-top: 5rem;
+    text-align: center;
 }
 
-#frase {
-    margin-left: 3.5rem;
-}
-
-#investimento {
-    margin-left: 3.3rem;
+#investimento{
+    margin-left: 10rem;
 }
 
 #title-info {
-    color: rgb(7, 7, 87);
+    color: rgba(0,41,95,255);
     margin-top: 3rem;
-    margin-left: 10rem;
+    margin-left: 3.5rem;
     font-weight: 800;
     line-height: 80%;
     font-size: 2rem;
 }
 
 #idealizacao{
-    background-color: rgb(7, 7, 87);
+    background-color: rgba(0,41,95,255);
     margin-top: 3rem;
     border-radius: 1rem;
-    color: rgb(255, 160, 83);
+    color: rgba(255,167,41,255);
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -81,7 +83,7 @@ html{
 }
 
 #idealizacao > h3 {
-    padding-left: 7rem;
+    padding-left: 8rem;
     color: white;
     font-weight: 800;
 }
@@ -109,26 +111,26 @@ li{
     flex-direction: row;
     gap: 8rem;
     list-style: none;
-    background-color: rgb(7, 7, 87);
-    color: rgb(255, 160, 83);
-    font-weight: 600;
-    font-size: 1.3rem;
+    background-color: rgba(0,41,95,255);
+    color: rgba(255,167,41,255);
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 #livro::before {
-    content: "\1F4D6"
+    content: "\1F4D6\00A0"
 }
 
 #bloco::before {
-    content: "\1F4DD"
+    content: "\1F4DD\00A0"
 }
 
 #foguete::before {
-    content: "\1F680"
+    content: "\1F680\00A0"
 }
 
 #sumario{
-    background-color: rgb(211, 209, 209);
+    background-color: rgba(237,237,237,255);
 }
 
 #sumario > h2{
@@ -180,7 +182,7 @@ li{
 }
 
 #pagamento {
-    background-color: rgb(7, 7, 87);
+    background-color: rgba(0,41,95,255);
     text-align: center;
 }
 
@@ -235,12 +237,12 @@ button:hover {
 }
 
 footer{
-    background-color: rgb(211, 209, 209);
+    background-color: rgba(255,167,41,255);
     display: flex;
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: rgb(78, 78, 78);
+    color: rgba(20,11,42,255);
     font-weight: bolder;
 }
 
@@ -272,7 +274,7 @@ footer{
     #imagem {
         margin-left: 0;
         margin-bottom: 1rem;
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -285,16 +287,16 @@ footer{
 
     #prof {
         margin-left: 0;
-        width: 100%;
+        width: 80%;
         margin-top: 1rem;
         padding: 1rem;
         margin: 0 auto;
     }
 
     #investimento {
-        margin-left: 0;
-        margin-top: 1rem;
+        margin: 0 auto;
         font-size: 1.5rem;
+        width: 80%;
     }
 
     #title-info {
@@ -305,13 +307,13 @@ footer{
     }
 
     #idealizacao {
-        margin-left: 0;
-        margin-top: 1rem;
+        margin: 0 auto;
+        margin-top: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        width: 100%;
+        width: 80%;
         margin-bottom: 2rem;
     }
 
@@ -401,15 +403,18 @@ footer{
     }
 
     #imagem {
-        margin-left: 0;
-        margin-right: 2rem;
-        width: 30%;
+        margin: 0 auto;
         height: auto;
         float: left;
     }
 
+    img {
+        width: 100%;
+    }
+
     #right {
-        width: 50%;
+        margin: 0 auto;
+        width: 80%;
         min-width: 300px; /* Evita que o conteúdo fique muito apertado */
     }
 
@@ -417,31 +422,34 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 10rem;
-        width: 70%;
+        width: 60%;
+        margin: 0 auto;
         margin-top: 2rem;
-        padding-right: 3rem;
+        text-align: center;
     }
 
     #investimento {
-        margin-left: 4rem;
-        margin-top: 1rem;
-        padding-bottom: 2rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+        text-align: center;
     }
 
     #title-info {
         font-size: 1.8rem;
-        text-align: left;
+        margin: 0 auto;
+        text-align: center;
     }
 
     #idealizacao {
-        margin-left: 12rem;
-        width: 50%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 4rem;
         margin-bottom: 4rem;
+        text-align: start;
     }
 
     #idealizacao > h3 {
-        padding-left: 2rem;
+        width: 100%;
     }
 
     #menuinformacional > ul {
@@ -449,8 +457,9 @@ footer{
         padding-bottom: 4rem;
         flex-direction: row;
         justify-content: center;
-        gap: 4rem;
-        font-size: 1.4rem;
+        text-align: center;
+        gap: 1rem;
+        font-size: 1rem;
     }
 
     #modulos {
