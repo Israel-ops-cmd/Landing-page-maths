@@ -195,7 +195,7 @@ li{
 
 #pagamento h2{
     padding-top: 1rem;
-    color: rgb(255, 160, 83);
+    color: rgba(255,167,41,255);
     font-size: 3rem;
     font-weight: 700;
 }
@@ -209,7 +209,7 @@ li{
 
 #pg {
     padding-top: 0rem;
-    color: rgb(255, 160, 83);
+    color: rgba(255,167,41,255);
     font-size: 3rem;
     font-weight: 700;
 }
