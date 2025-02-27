@@ -7,32 +7,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>E-book de Matemática</title>
 </head>
 <body>
     <main>
         <header>
             <div id="titulo">
-                <h1>MATEMÁTICA DO ZERO!</h1>
+                <h1>APRENDA MATEMÁTICA DE UMA VEZ POR TODAS!</h1>
             </div>
             <div id="principal">
-                <div id="imagem">
-                    <img width="500" height="500" src="assets/adriel_orange.png" alt="">
-                </div>
-                <div id="right">
-                    <div id="prof">
-                        <h4 id="frase">Prof. Adriel Lucas</h4>
-                    </div>
+                <div id="left">
                     <div id="investimento">
                         <h3 id="title-info"><strong>INVISTA NA</strong><br>
                         SUA CARREIRA!</h3>
                     </div>
+                    <div id="prof">
+                        <h4 id="frase">Prof. Adriel Lucas</h4>
+                        <ul>
+                            <li>Formado em matemática pela UFRN</li>
+                            <li>Especialista em Matemática para o Ensino Médio</li>
+                            <li>Professor olímpico</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="imagem">
+                    <img width="500" height="500" src="assets/adriel_orange.png" alt="">
+                </div>
+                <div id="right">
+                    <!--<div id="investimento">
+                        <h3 id="title-info"><strong>INVISTA NA</strong><br>
+                        SUA CARREIRA!</h3>
+                    </div>-->
                     <div id="idealizacao">
                         <h3>IDEAL PARA</h3>
-                        <ul id="lista">
+                        <ul class="lista">
                             <li>Estudantes da educação básica</li>
                             <li>Concurseiros iniciantes</li>
                             <li>Professores que buscam material sobre o tema</li>
+                        </ul>
+                        <h3 id="second">BENEFÍCIOS</h3>
+                        <ul class="lista">
+                            <li>Acessível para qualquer pessoa</li>
+                            <li>Método didático e direto ao ponto</li>
+                            <li>Conveniência e flexibilidade: aprenda de qualquer lugar</li>
+                            <li>Acesso ilimitado</li>
                         </ul>
                     </div>
                 </div>
@@ -40,9 +59,9 @@
         </header>
         <div id="menuinformacional">
             <ul>
-                <li id="livro">Questões Resolvidas e Comentadas</li>
-                <li id="bloco">38 Páginas de Conteúdo</li>
-                <li id="foguete">Aprendizado Acelerado</li>
+                <li id="livro">Questões do Enem resolvidas e comentadas</li>
+                <li id="bloco">40 Páginas de Conteúdo</li>
+                <li id="foguete">Aprendizagem acelerada</li>
             </ul>
         </div>
         <div id="sumario">
@@ -73,13 +92,36 @@
         <div id="pagamento">
             <h3>Seus resultados começam aqui: aprenda matemática do zero e destrave seu potencial!</h3>
             <h2>OFERTA ESPECIAL</h2>
-            <h4>De R$ 79,99 Por Apenas</h2>
+            <h4>De R$ 79,99 Por apenas</h2>
             <h2 id="pg">R$ 37,99</h2>
-            <button type="submit">Transforme a sua Carreira Agora</button>
+                <button type="submit">Transforme sua carreira agora</button>
         </div>
+        <div id="compra" class="hidden">
+            <h2>🚀 Escolha seu módulo e comece agora!</h2>
+            <p>✔ Acesse o conteúdo de qualquer lugar e domine a matemática de forma prática e objetiva.</p>
+            <p>✔ Método testado e aprovado por alunos que já melhoraram seu desempenho.</p>
+            
+            <div id="beneficios">
+                <h3>💡 O que você ganha:</h3>
+                <ul>
+                    <li>📘 E-book completo com teoria e questões resolvidas.</li>
+                    <li>📊 Material bônus com dicas para provas e concursos.</li>
+                    <li>💬 Suporte exclusivo para dúvidas.</li>
+                    <li>🔄 Acesso vitalício ao material.</li>
+                </ul>
+            </div>
+        
+            <div id="ebooks">
+                <button type="submit">📗 Adquirir o Módulo I</button>
+                <button type="submit">📘 Adquirir o Módulo II</button>
+            </div>
+        
+            <button id="fechar">❌ Fechar</button>
+        </div>
+        
         <footer>
             <p>Copyright@E-book de Matemática</p>
         </footer>
-    </main>
+    </main>   
 </body>
 </html>
