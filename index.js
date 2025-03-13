@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     botaoModulo1.addEventListener("click", function () {
-        window.open("https://pay.herospark.com/matematica-do-zero-modulo-i-409642", "_blank");
+        window.open("https://adriel-lucas.herospark.co/matematica-do-zero-modulo-i", "_blank");
     });
 });
