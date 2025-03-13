@@ -448,6 +448,12 @@ footer{
         justify-content: center;
     }
 
+    #imagem img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
     #right {
         margin-top: 1rem;
         text-align: center;
