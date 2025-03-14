@@ -171,6 +171,17 @@ ul{
     content: "\1F680\00A0"
 }
 
+#livro a {
+    color: inherit; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+#livro a:hover {
+    text-decoration: underline; 
+}
+
+
 #sumario{
     background-color: rgba(237,237,237,255);
 }
