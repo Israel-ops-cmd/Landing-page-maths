@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <title>E-book de Matemática</title>
@@ -55,11 +56,7 @@
         </header>
         <div id="menuinformacional">
             <ul>
-                <li id="livro">
-                    <a href="https://online.fliphtml5.com/hxxgv/qqrt/" target="_blank" rel="noopener noreferrer">
-                        Questões do Enem resolvidas e comentadas
-                    </a>
-                </li>
+                <li id="livro">Questões do Enem resolvidas e comentadas</li>
                 <li id="bloco">40 Páginas de Conteúdo</li>
                 <li id="foguete">Aprendizagem acelerada</li>
             </ul>
@@ -89,12 +86,29 @@
                 </div>
             </div>
         </div>
+        <div id="depoimentos">
+            <h2>O QUE OS ALUNOS DIZEM SOBRE O EBOOK</h2>
+            <div id="depoimentos-container">
+                <div class="depoimento-card">
+                    <img src="assets/gael.jpg" alt="Depoimento Gael">
+                </div>
+                <div class="depoimento-card">
+                    <img src="assets/pablo.jpg" alt="Depoimento Pablo">
+                </div>
+                <div class="depoimento-card">
+                    <img src="assets/camille.jpg" alt="Depoimento Camille">
+                </div>
+                <div class="depoimento-card">
+                    <img src="assets/luis.jpg" alt="Depoimento Luis">
+                </div>
+            </div>
+        </div>          
         <div id="pagamento">
             <h3>Seus resultados começam aqui: aprenda matemática do zero e destrave seu potencial!</h3>
             <h2>OFERTA ESPECIAL</h2>
-            <h4>De R$ 79,99 Por apenas</h2>
+            <h4>De <del>R$ 79,99</del> Por apenas</h2>
             <h2 id="pg">R$ 37,99</h2>
-                <button type="submit">Transforme sua carreira agora</button>
+                <button type="submit">Transforme sua carreira agora!</button>
         </div>
         <div id="compra" class="hidden">
             <h2>🚀 Escolha seu módulo e comece agora!</h2>
@@ -126,9 +140,84 @@
                 <button id="fechar-modulo2">Fechar</button>
             </div>
         </div>
+        <div id="garantia">
+            <h2>Garantia de Satisfação de 7 Dias</h2>
+            <p>Você pode navegar por toda estrutura da plataforma por 7 dias após a sua compra, e se você entender que o nosso e-book não é para você, nós devolvemos 100% do seu investimento, sem você precisar ficar explicando o porquê.</p>
+            <div id="garantia-icone">
+                <img src="assets/garantia.png" alt="Ícone de Garantia">
+            </div>
+            <button>Quero garantir meu e-book agora!</button>
+        </div>  
+        <div id="bonus">
+            <div id="bonus-texto">
+                <h3>🎁 Bônus Exclusivo: Todas as questões do Enem 2024 resolvidas e comentadas!</h3>
+                <p>Ao adquirir o e-book você recebe gratuitamente um material exclusivo com TODAS as questões de 2024 resolvidas e comentadas por especialistas.</p>
+                <p>Uma oportunidade única para aprofundar seus conhecimentos e garantir sua aprovação!</p>
+                <button id="bonus-btn">Quero meu e-book + Bônus Agora!</button>
+            </div>
+            <div id="bonus-imagem">
+                <img src="assets/bonus.png" alt="Imagem do material bônus">
+            </div>
+        </div>  
+        <div id="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <h3>Terei acesso por quanto tempo?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>O acesso ao curso é vitalício, ou seja, você poderá acessar o conteúdo sempre que desejar, sem limitação de tempo.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <h3>Posso acessar de qualquer lugar?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, você pode acessar o curso de qualquer lugar, desde que tenha uma conexão à internet. O conteúdo está disponível online, permitindo que você estude de forma flexível, onde e quando quiser.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <h3>O e-book serve para quem não sabe nada de matemática?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, o e-book foi desenvolvido para quem está começando do zero. Ele apresenta os conceitos de forma clara e didática, com uma abordagem simples que facilita o entendimento, mesmo para quem não tem nenhum conhecimento prévio em matemática.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <h3>Tem professor para tirar dúvidas?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, ao adquirir o e-book você tem acesso ao suporte exclusivo para tirar dúvidas diretamente com o professor. </p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <h3>Já faço cursinho, vale a pena adquirir o e-book?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, o e-book pode ser uma excelente ferramenta complementar para quem já faz cursinho. Ele oferece uma abordagem prática e objetiva, com questões resolvidas e dicas valiosas que podem ajudá-lo a fixar o conteúdo e melhorar seu desempenho nas provas. Além disso, o acesso imediato e flexível ao material facilita o estudo em paralelo ao seu cursinho. </p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <h3>Quais são os métodos de pagamento?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Você pode fazer o pagamento via cartão, de crédito ou débito, e PIX para ser liberado o acesso na hora. Você pode fazer via boleto, porém leva até 3 dias para você receber o acesso ao e-book.
+                    </p>
+                </div>
+            </div>
+        </div>                          
         <footer>
             <p>Copyright@E-book de Matemática</p>
         </footer>
+        <a href="https://wa.me/5584988596256" target="_blank" id="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
     </main>   
 </body>
 </html>

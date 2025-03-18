@@ -238,6 +238,49 @@ ul{
     list-style: disc;
 }
 
+#depoimentos {
+    background-color: rgba(255, 167, 41, 255);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#depoimentos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(20,11,42,255);
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+#depoimentos-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1.5rem; 
+    flex-wrap: wrap;
+    padding: 0 2rem; 
+}
+
+.depoimento-card {
+    width: 23%; 
+    height: auto; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.depoimento-card:hover {
+    transform: scale(1.05); 
+}
+
+.depoimento-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
 #pagamento {
     background-color: rgba(0,41,95,255);
     text-align: center;
@@ -412,6 +455,161 @@ button #fechar-modulo2:hover {
     background: #0056b3;
 }
 
+#garantia {
+    background-color: rgba(237,237,237,255);
+    color: black;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#garantia h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+#garantia p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#garantia-icone {
+    margin-bottom: 2rem;
+}
+
+#garantia-icone img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#garantia button {
+    background-color: #1ca31c;
+    margin-top: .8rem;
+    width: 17rem;
+    height: 2.8rem;
+    border: 0;
+    border-radius: .5rem;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+#garantia button:hover {
+    background-color: #32CD32;
+}
+
+#bonus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,41,95,255);
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+#bonus-texto {
+    max-width: 500px;
+}
+
+#bonus-texto h3 {
+    font-size: 1.8rem;
+    color: rgba(255,167,41,255);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#bonus-texto p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+#bonus-btn {
+    background-color: #1ca31c;
+    margin-top: .8rem;
+    width: 17rem;
+    height: 2.8rem;
+    border: 0;
+    border-radius: .5rem;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+#bonus-btn:hover {
+    background-color: #32CD32;
+}
+
+#bonus-imagem img {
+    width: 300px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+#faq {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(237,237,237,255);
+}
+
+#faq h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(54, 54, 54);
+    color: #FFFFFF; 
+    border: 1px solid #fff;
+    border-radius: 5px; 
+    padding: 10px; 
+    margin: 0; 
+    cursor: pointer; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+}
+
+.faq-question:hover {
+    background-color: #949090; 
+}
+
+.faq-answer {
+    display: none; 
+    padding: 10px;
+    background-color: #cfc2c2;
+    border-top: 1px solid #fff;
+    border-radius: 5px; 
+}
+
+.faq-question.open + .faq-answer {
+    display: block;
+}
 
 footer{
     background-color: rgba(255,167,41,255);
@@ -421,6 +619,24 @@ footer{
     padding-bottom: 1rem;
     color: rgba(20,11,42,255);
     font-weight: bolder;
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+#whatsapp-icon i {
+    font-size: 60px; 
+    color: #25D366; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#whatsapp-icon i:hover {
+    transform: scale(1.1); 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -573,6 +789,66 @@ footer{
         margin-top: 1rem;
     }
 
+    #depoimentos-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .depoimento-card {
+        width: 80%; 
+        margin-bottom: 1.5rem; 
+        box-shadow: none;
+    }
+
+    #bonus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0,41,95,255);
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    #bonus-texto {
+        max-width: 500px;
+    }
+    
+    #bonus-texto h3 {
+        font-size: 1.8rem;
+        color: rgba(255,167,41,255);
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    #bonus-texto p {
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    #bonus-btn {
+        background-color: #1ca31c;
+        margin: 0 auto;
+        width: 17rem;
+        height: 2.8rem;
+        border: 0;
+        border-radius: .5rem;
+        color: #FFFFFF;
+        font-weight: bolder;
+        font-size: .9rem;
+        cursor: pointer;
+        display: block;
+        margin: 2rem auto;
+    }
+    
+    #bonus-btn:hover {
+        background-color: #32CD32;
+    }
+
     footer {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -700,11 +976,18 @@ footer{
         font-size: 1.1rem;
     }
 
+    #depoimentos-container {
+        flex-wrap: wrap; 
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    .depoimento-card {
+        width: 45%; 
+        margin-bottom: 1.5rem; 
+    }
+
     footer {
         font-size: 1.2rem;
     }
 }
-
-
-
-
