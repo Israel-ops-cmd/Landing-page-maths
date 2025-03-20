@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     botaoModulo1.addEventListener("click", function () {
-        window.open("https://adriel-lucas.herospark.co/matematica-do-zero-modulo-i-e2a0ef2c-2183-4a70-a764-bbb0d58546f9", "_blank");
+        window.open("https://pay.herospark.com/matematica-do-zero-modulo-i-410186");
     })
 
     const faqQuestions = document.querySelectorAll('.faq-question');
