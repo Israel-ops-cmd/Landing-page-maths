@@ -16,47 +16,18 @@
         <header>
             <div id="titulo">
                 <h1>APRENDA MATEMÁTICA DE UMA VEZ POR TODAS!</h1>
+                <p>O e-book mais completo de matemática para <br> ENEM e Vestibulares <strong>do zero ao gabarito.</strong></p>
+                <button type="button" onclick="scrollToPayment();">Quero o meu e-book agora!</button>
             </div>
             <div id="principal">
-                <div id="left">
-                    <div id="investimento">
-                        <h3 id="title-info"><strong>INVISTA NA</strong><br>
-                        SUA CARREIRA!</h3>
-                    </div>
-                    <div id="prof">
-                        <h4 id="frase">Prof. Adriel Lucas</h4>
-                        <ul>
-                            <li>Formado em matemática pela UFRN</li>
-                            <li>Especialista em Matemática para o Ensino Médio</li>
-                            <li>Professor olímpico</li>
-                        </ul>
-                    </div>
-                </div>
                 <div id="imagem">
-                    <img width="500" height="500" src="assets/adriel_orange.png" alt="">
-                </div>
-                <div id="right">
-                    <div id="idealizacao">
-                        <h3>IDEAL PARA</h3>
-                        <ul class="lista">
-                            <li>Estudantes da educação básica</li>
-                            <li>Concurseiros iniciantes</li>
-                            <li>Professores que buscam material sobre o tema</li>
-                        </ul>
-                        <h3 id="second">BENEFÍCIOS</h3>
-                        <ul class="lista">
-                            <li>Acessível para qualquer pessoa</li>
-                            <li>Método didático e direto ao ponto</li>
-                            <li>Conveniência e flexibilidade: aprenda de qualquer lugar</li>
-                            <li>Acesso ilimitado</li>
-                        </ul>
-                    </div>
+                    <img src="assets/adrielfundo.png" alt="">
                 </div>
             </div>
         </header>
         <div id="menuinformacional">
             <ul>
-                <li id="livro">Questões do Enem resolvidas e comentadas</li>
+                <li id="livro">Exercícios resolvidos com explicação detalhada</li>
                 <li id="bloco">40 Páginas de Conteúdo</li>
                 <li id="foguete">Aprendizagem acelerada</li>
             </ul>
@@ -65,7 +36,7 @@
             <h2>Sumário</h2>
             <div id="modulos">
                 <div id="modulo1">
-                    <h3 class="mod" id="one">Módulo I</h3>
+                    <button class="mod">Módulo I</button>
                     <ul class="point">
                         <li>Sistemas de Numeração</li>
                         <li>Noções Básicas de Conjuntos</li>
@@ -74,18 +45,8 @@
                         <li>Equação do Primeiro Grau</li>
                     </ul>
                 </div>
-                <div id="modulo2">
-                    <h3 class="mod" id="two">Módulo II</h3>
-                    <ul class="point">
-                        <li>Razão, Proporção e Regra de Três</li>
-                        <li>Equação do Segundo Grau</li>
-                        <li>Porcentagem, Juros Simples e Composto</li>
-                        <li>Estatística Básica</li>
-                        <li>Conceitos Básicos de Geometria</li>
-                    </ul>
-                </div>
             </div>
-        </div>
+        </div>              
         <div id="depoimentos">
             <h2>O QUE OS ALUNOS DIZEM SOBRE O EBOOK</h2>
             <div id="depoimentos-container">
@@ -111,7 +72,7 @@
                 <button type="submit">Transforme sua carreira agora!</button>
         </div>
         <div id="compra" class="hidden">
-            <h2>🚀 Escolha seu módulo e comece agora!</h2>
+            <h2>🚀 Adquira seu módulo e comece agora!</h2>
             <p>✔ Acesse o conteúdo de qualquer lugar e domine a matemática de forma prática e objetiva.</p>
             <p>✔ Método testado e aprovado por alunos que já melhoraram seu desempenho.</p>
             
@@ -127,7 +88,6 @@
         
             <div id="ebooks">
                 <button type="submit">📗 Adquirir o Módulo I</button>
-                <button type="submit">📘 Adquirir o Módulo II</button>
             </div>
         
             <button id="fechar">❌ Fechar</button>
@@ -142,7 +102,7 @@
         </div>
         <div id="garantia">
             <h2>Garantia de Satisfação de 7 Dias</h2>
-            <p>Você pode navegar por toda estrutura da plataforma por 7 dias após a sua compra, e se você entender que o nosso e-book não é para você, nós devolvemos 100% do seu investimento, sem você precisar ficar explicando o porquê.</p>
+            <p>Você pode navegar por toda estrutura da plataforma por 7 dias após a sua compra e, se você entender que o nosso e-book não é para você, nós devolvemos 100% do seu investimento, sem você precisar ficar explicando o porquê.</p>
             <div id="garantia-icone">
                 <img src="assets/garantia.png" alt="Ícone de Garantia">
             </div>
@@ -151,7 +111,7 @@
         <div id="bonus">
             <div id="bonus-texto">
                 <h3>🎁 Bônus Exclusivo: Todas as questões do Enem 2024 resolvidas e comentadas!</h3>
-                <p>Ao adquirir o e-book você recebe gratuitamente um material exclusivo com TODAS as questões de 2024 resolvidas e comentadas por especialistas.</p>
+                <p>Ao adquirir o e-book, você recebe gratuitamente um material exclusivo com TODAS as questões de 2024 resolvidas e comentadas por especialistas.</p>
                 <p>Uma oportunidade única para aprofundar seus conhecimentos e garantir sua aprovação!</p>
                 <button id="bonus-btn">Quero meu e-book + Bônus Agora!</button>
             </div>
@@ -210,14 +170,24 @@
                     </p>
                 </div>
             </div>
-        </div>                          
+        </div>  
+        <div id="identificacao">
+            <img width="500" height="500" src="assets/adrielfundo.png" alt="">
+            <div id="text">
+                <h2>Quem é o Professor?</h2>
+                <p>
+                    Olá! <br><br>
+                    Sou o professor Adriel Lucas, formado na UFRN (Universidade Federal do Rio Grande do Norte). Apesar de ter ingressado na Universidade em 2019, desde 2016, no ensino médio, eu tinha certeza de que queria ser professor, afinal comecei a ministrar aulas de música informalmente. 
+                    <br>Ao escolher minha carreira profissional, decidi que queria ajudar pessoas a aprenderem uma matéria tão temida: a matemática e, desde então, tenho auxiliado pessoas e ajudado a desenvolver o pensamento lógico matemático. <br> E assim surgiu o e-book de matemática, onde disponibilizo um conteúdo único, de fácil entendimento e rápida absorção, conquistando a cada dia mais alunos que se identificam com a minha forma alegre de ensinar e evoluem aprendendo com o meu método inovador.
+                </p>
+            </div>
+        </div>                        
         <footer>
             <p>Copyright@E-book de Matemática</p>
         </footer>
         <a href="https://wa.me/5584988596256" target="_blank" id="whatsapp-icon">
             <i class="fab fa-whatsapp"></i>
         </a>
-
     </main>   
 </body>
 </html>
