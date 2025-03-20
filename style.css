@@ -704,6 +704,7 @@ footer{
 
     #garantia button {
         width: 80%;
+        margin: 0 auto;
     }
 
     #bonus {
