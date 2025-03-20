@@ -702,6 +702,10 @@ footer{
         box-shadow: none;
     }
 
+    #garantia button {
+        width: 80%;
+    }
+
     #bonus {
         display: flex;
         justify-content: center;
@@ -854,6 +858,8 @@ footer{
         width: 60%;
         font-size: 1.1rem;
     }
+
+    
 
     #depoimentos-container {
         flex-wrap: wrap; 
