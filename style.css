@@ -97,7 +97,7 @@ img {
 }
 
 #sumario {
-    background-color: rgba(237, 237, 237, 1); /* Fundo cinza */
+    background-color: rgba(237, 237, 237, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,127 +252,6 @@ button:hover {
     transform: translateY(-7px);
     box-shadow: 0px 15px 20px #05103081;
     transition-duration: 0.5s;
-}
-
-#compra { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 30px;
-    width: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-#compra h2 {
-    margin-bottom: 10px;
-}
-
-#compra p {
-    font-size: 14px;
-    color: #555;
-}
-
-#beneficios {
-    text-align: left;
-    margin-top: 15px;
-}
-
-#beneficios ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-}
-
-#beneficios ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-#ebooks button {
-    display: inline-block;
-    width: 90%;
-    margin: 10px 5px;
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #ff8000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#ebooks button:hover {
-    background-color: #cc6600;
-}
-
-#fechar {
-    width: 90%;
-    margin-top: 15px;
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#fechar:hover {
-    background-color: darkred;
-}
-
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(5px); 
-    z-index: 9;
-}
-
-#compra, #modal-modulo2 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 300px;
-    z-index: 10;
-}
-
-#modal-modulo2 h2 {
-    margin-bottom: 1rem; 
-}
-
-#modal-modulo2 p {
-    line-height: 1.6; 
-}
-
-button #fechar-modulo2 {
-    background: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-button #fechar-modulo2:hover {
-    background: #0056b3;
 }
 
 #garantia {
