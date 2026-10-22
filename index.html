@@ -72,7 +72,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .brand-orb{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:15px;font-weight:900;color:var(--navy);background:radial-gradient(circle at 32% 28%,#fff1c2 0%,var(--gold) 45%,#d99a00 100%);box-shadow:0 0 14px rgba(255,183,3,.45),inset -2px -3px 6px rgba(120,70,0,.35)}
 .brand small{font-weight:400;opacity:.7;font-size:13px;margin-left:2px}
 .nav-right{display:flex;align-items:center;gap:30px}
-.nav-links{display:flex;gap:30px;font-size:14px;font-weight:700;color:var(--soft-80)}
+.nav-links{display:flex;white-space:nowrap;gap:30px;font-size:14px;font-weight:700;color:var(--soft-80)}
 .nav-links a{transition:color .2s;padding:12px 0}
 .nav-links a:hover{color:var(--gold)}
 .btn-open{background:var(--gold);color:var(--navy);font-weight:900;font-size:14px;padding:12px 20px;border-radius:999px;transition:transform .25s,box-shadow .25s;white-space:nowrap}
@@ -108,7 +108,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 #stage{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0;touch-action:pan-y}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(255,255,255,.014) 0 1px,transparent 1px 7px),radial-gradient(120% 80% at 50% 0%,transparent 55%,rgba(0,0,0,.4) 100%)}
 .hero-inner{position:relative;z-index:2;pointer-events:none;max-width:var(--max);margin:0 auto;min-height:inherit;padding:calc(var(--nav-h) + 40px) var(--pad) 80px;display:flex;flex-direction:column;justify-content:center}
-.copy{max-width:min(610px,50vw);pointer-events:auto}
+.copy{max-width:min(580px,44vw);pointer-events:auto}
+.prof{position:absolute;z-index:-1;top:calc(var(--nav-h) + 24px);left:calc(var(--pad) + min(580px,44vw) + 2vw);height:min(calc(100vh - var(--nav-h) - 30px),calc(32vw * 1.31),600px);height:min(calc(100svh - var(--nav-h) - 30px),calc(32vw * 1.31),600px);pointer-events:none}
+.prof::before{content:"";position:absolute;left:-10%;right:-10%;bottom:0;height:78%;border-radius:50% 50% 0 0;background:radial-gradient(60% 70% at 50% 100%,rgba(255,183,3,.34),rgba(255,183,3,.08) 55%,transparent 75%)}
+.prof img{position:relative;height:100%;width:auto;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent);opacity:0;transform:translateY(40px);animation:rise 1.2s var(--ease) .25s forwards}
+.prof-tag{position:absolute;z-index:2;left:-8%;bottom:20%;background:var(--white);color:var(--navy);border-radius:16px;padding:12px 16px;font-weight:900;font-size:15px;line-height:1.2;box-shadow:0 18px 40px rgba(0,0,0,.35);opacity:0;animation:rise .9s var(--ease) .9s forwards}
+.prof-tag small{display:block;font-weight:700;font-size:12px;color:var(--navy-70)}
 .hero h1{font-size:clamp(40px,5.1vw,72px);line-height:1.02;font-weight:900;letter-spacing:-.035em}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .hero .sub{margin-top:26px;color:var(--soft-80);font-size:clamp(17px,1.5vw,20px);line-height:1.6;max-width:530px}
@@ -119,6 +124,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .reveal{opacity:0;transform:translateY(18px);animation:rise .9s var(--ease) forwards}
 .d1{animation-delay:.08s}.d2{animation-delay:.2s}.d3{animation-delay:.32s}.d4{animation-delay:.44s}
 @keyframes rise{to{opacity:1;transform:none}}
+.pi{position:absolute;left:0;top:0;z-index:3;pointer-events:none;font-weight:900;font-size:40px;line-height:1;color:var(--gold);text-shadow:0 0 18px rgba(255,183,3,.55),0 0 2px rgba(255,183,3,.9);transform:translate3d(-100px,-100px,0);opacity:0;transition:opacity .4s;will-change:transform}
+.pi.on{opacity:1}
+@media (pointer:fine){.hero.pi-mode,.hero.pi-mode #stage{cursor:none}.hero a{cursor:pointer}}
 .loader{position:absolute;z-index:2;width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,183,3,.18);border-top-color:var(--gold);transform:translate(-50%,-50%);animation:spin 1s linear infinite;transition:opacity .5s;left:70%;top:50%}
 .loader.hide{opacity:0}
 @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
@@ -301,10 +309,13 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
   .about{gap:50px}
   .i-where{grid-column:span 12}.i-hours{grid-column:span 7}.i-pay{grid-column:span 5}
 }
+@media (max-width:1180px){ .nav-links{display:none} .menu-btn{display:inline-flex} .nav-right{gap:10px} }
 @media (max-width:960px){ .nav-links{display:none} .menu-btn{display:inline-flex} .nav-right{gap:10px} }
 @media (max-width:860px){
   .hero-inner{justify-content:flex-end;text-align:center;align-items:center;padding:calc(var(--nav-h) + min(44vh,340px)) 24px 48px}
   .copy{max-width:560px}
+  .prof{left:4%;top:calc(var(--nav-h) + 6px);bottom:auto;width:auto;height:calc(min(44vh,340px) - 6px)}
+  .prof-tag{left:auto;right:-30%;bottom:16%;font-size:13px;padding:9px 12px}
   .hero h1{font-size:clamp(32px,8.6vw,52px)}
   .hero .sub{margin:14px auto 0;font-size:16px}
   .cta-row{justify-content:center;margin-top:24px}
@@ -335,6 +346,7 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
   .brand{font-size:17px}.brand small{display:none}
   .btn-open{padding:10px 14px;font-size:13px;min-height:44px;display:inline-flex;align-items:center}
   .hero-inner{padding:calc(var(--nav-h) + min(40vh,300px)) 16px 36px}
+  .prof{height:calc(min(40vh,300px) - 6px);left:2%}
   .hide-xs{display:none}
   .brand{gap:8px}
   .btn{padding:12px 20px}
@@ -354,6 +366,17 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
   .hours li{font-size:14px}
   .wa{width:56px;height:56px}
 }
+@media (max-height:760px) and (min-width:861px){ .hero h1{font-size:clamp(36px,4.2vw,58px)} .hero .sub{margin-top:18px} .cta-row{margin-top:24px} .proof{margin-top:24px} .hero-inner{padding-bottom:48px} }
+@media (max-height:820px){
+  .hs-head .h2{font-size:clamp(30px,3.6vw,46px)}
+  .hs-track{padding-top:28px}
+  .quote{min-height:0;padding:30px;gap:22px}
+  .quote blockquote{font-size:clamp(16px,1.4vw,19px)}
+  .quote blockquote::before{font-size:54px}
+  .quote:nth-child(2n){transform:translateY(16px)}
+  .hs-note{margin-top:14px}
+}
+@media (max-height:620px){ .quote:nth-child(2n){transform:none} .hs-note{display:none} }
 @media (prefers-reduced-motion:reduce){
   .reveal{animation:none;opacity:1;transform:none}
   .rv,.rv-img,.split .w>span{opacity:1!important;transform:none!important;transition:none!important}
@@ -396,7 +419,12 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
 <section class="hero" id="hero" aria-label="Apresentação">
   <canvas id="stage" aria-hidden="true"></canvas>
   <div class="loader" id="loader" aria-hidden="true"></div>
+  <div class="pi" id="pi" aria-hidden="true">π</div>
   <div class="hero-inner">
+    <div class="prof" id="prof">
+      <img src="img/adriel-lucas.webp" width="581" height="760" fetchpriority="high" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
+      <div class="prof-tag">Prof. Adriel Lucas<small>UFRN, 4 anos de sala de aula</small></div>
+    </div>
     <div class="copy">
       <h1 class="reveal d1">Perca o medo da prova de matemática em <em>40 páginas</em></h1>
       <p class="sub reveal d2">Eu sou o <strong>Adriel Lucas</strong>, professor de matemática. Escrevi este e-book para quem trava na base: fração, MMC, equação. Você aprende do zero resolvendo questões no estilo ENEM e concurso, sem enrolação.</p>
@@ -1010,11 +1038,15 @@ function layout() {
   renderer.setSize(W, H, false); composer.setSize(W, H); bloom.resolution.set(W, H);
   const navH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--nav-h")) || 62;
   let robotPx;
-  if (!isMobile) { robotPx = Math.min(H * 0.62, W * 0.4, 640); anchor.x = W * 0.695; anchor.y = H * 0.5 + 8; }
-  else {
-    const copyTop = document.querySelector(".copy").getBoundingClientRect().top - hero.getBoundingClientRect().top;
-    const room = Math.max(copyTop - navH, 220); robotPx = Math.min(room * 0.92, W * 0.82);
-    anchor.x = W / 2; anchor.y = navH + room * 0.5;
+  // the robot sits beside the professor's photo, in the free space to its right
+  const hr = hero.getBoundingClientRect(), pr = document.getElementById("prof").getBoundingClientRect();
+  const pRight = pr.right - hr.left, pTop = pr.top - hr.top, free = Math.max(W - pRight, 0);
+  if (!isMobile) {
+    robotPx = Math.max(150, Math.min(free * 0.95, H * 0.34, 300));
+    anchor.x = Math.min(pRight + Math.max(free, robotPx) / 2, W - robotPx * 0.5); anchor.y = Math.max(pTop + pr.height * 0.28, navH + robotPx * 0.6);
+  } else {
+    robotPx = Math.max(96, Math.min(free * 0.95, pr.height * 0.5, 170));
+    anchor.x = Math.min(pRight + Math.max(free, robotPx) / 2, W - robotPx * 0.56); anchor.y = pTop + pr.height * 0.3;
   }
   camera.aspect = W / H;
   camera.position.set(0, 0, (3.4 * H) / (robotPx * 2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))));
@@ -1025,10 +1057,15 @@ new ResizeObserver(layout).observe(hero); layout();
 
 /* pointer */
 const target = { x: 0, y: 0 }, look = { x: 0, y: 0 }; let lastMove = -10;
+const piEl = document.getElementById("pi"); const finePtr = matchMedia("(pointer: fine)").matches;
+const mouse = { x: 0, y: 0, inHero: false, onLink: false }; const piPos = { x: -100, y: -100, init: false };
+if (finePtr) {
+  hero.addEventListener("pointermove", e => { const r = hero.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.inHero = true; mouse.onLink = !!e.target.closest("a,button"); hero.classList.add("pi-mode"); });
+  hero.addEventListener("pointerleave", () => { mouse.inHero = false; });
+}
 const onPoint = (x, y) => {
-  const rx = isMobile ? W * 0.5 : Math.max(W * 0.55, 500), ry = isMobile ? H * 0.5 : Math.max(H * 0.55, 400);
   const r = hero.getBoundingClientRect();
-  target.x = clamp((x - anchor.x - r.left) / rx, -1.2, 1.2); target.y = clamp((y - anchor.y - r.top) / ry, -1.2, 1.2); lastMove = performance.now() / 1000;
+  if (x < r.left || x > r.right || y < r.top || y > r.bottom) return; lastMove = performance.now() / 1000;
 };
 addEventListener("pointermove", e => onPoint(e.clientX, e.clientY), { passive: true });
 addEventListener("pointerdown", e => onPoint(e.clientX, e.clientY), { passive: true });
@@ -1056,7 +1093,20 @@ new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) { l
 function tick() {
   if (!visible) return;
   const t = performance.now() / 1000; const dt = Math.min(t - last, 0.05); last = t;
-  if (t - lastMove > 3.5) { target.x = Math.sin(t * 0.45) * 0.45; target.y = Math.sin(t * 0.31 + 1.2) * 0.2; }
+  // the robot keeps its eyes on a golden pi: the mouse on desktop, a floating pi otherwise
+  const rx = isMobile ? W * 0.5 : Math.max(W * 0.55, 500), ry = isMobile ? H * 0.5 : Math.max(H * 0.55, 400);
+  const following = finePtr && mouse.inHero && t - lastMove < 3.5;
+  let px, py;
+  if (following) { px = mouse.x; py = mouse.y; }
+  else {
+    const span = isMobile ? Math.min(W * 0.3, 110) : Math.min(W * 0.12, 200);
+    px = anchor.x + Math.sin(t * 0.45 * m) * span; py = anchor.y - span * 0.15 + Math.sin(t * 0.7 * m + 1.2) * span * 0.55;
+  }
+  if (!piPos.init) { piPos.x = px; piPos.y = py; piPos.init = true; }
+  const kp = following ? 1 - Math.pow(0.0001, dt) : 1; piPos.x += (px - piPos.x) * kp; piPos.y += (py - piPos.y) * kp;
+  piEl.style.transform = `translate3d(${(piPos.x - 12).toFixed(1)}px,${(piPos.y - 20).toFixed(1)}px,0)`;
+  piEl.classList.toggle("on", intro > 0.6 && !(following && mouse.onLink));
+  target.x = clamp((piPos.x - anchor.x) / rx, -1.2, 1.2); target.y = clamp((piPos.y - anchor.y) / ry, -1.2, 1.2);
   const k1 = 1 - Math.pow(0.0025, dt); look.x += (target.x - look.x) * k1; look.y += (target.y - look.y) * k1;
   intro = Math.min(1, intro + dt * 1.4); const k = intro; robot.scale.setScalar(Math.max(0.001, 1 + 2.4 * (k - 1) ** 3 + 1.4 * (k - 1) ** 2));
   const bob = Math.sin(t * 1.6) * 0.09 * m; robot.position.y = bob;
