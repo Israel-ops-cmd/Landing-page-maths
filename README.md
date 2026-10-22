@@ -1,27 +1,13 @@
-*Landing Page para eBook de Matemática*
+# E-book de Matemática do Professor Adriel Lucas
 
-Olá! Esta é uma landing page interativa criada com HTML, CSS e JavaScript para promover e vender um eBook de matemática. A ideia é proporcionar uma experiência agradável e intuitiva para os visitantes, incentivando-os a adquirir o eBook de forma simples e rápida.
+Landing page de venda do e-book "Matemática do Zero" (Módulo I) do Professor Adriel Lucas, de Natal RN, para estudantes de todo o Brasil.
 
-- Tecnologias Utilizadas
-HTML: Para estruturar o conteúdo de forma clara e bem organizada.
+- Página única em `index.html` com CSS e JS embutidos (fonte Montserrat 400, 700 e 900).
+- Hero com robô 3D interativo em Three.js, nas cores da marca (azul marinho #0B132B, azul suave #F4F7FA, dourado #FFB703).
+- Animações de rolagem em JavaScript puro: rolagem com inércia, títulos com revelação por palavra, linha do tempo desenhada, cards empilhados, galeria horizontal de depoimentos, texto que se preenche, foto com revelação em máscara e contadores tipo odômetro.
+- Imagens otimizadas em `img/` (WebP).
 
-CSS: Para garantir um design responsivo e visualmente atraente em diferentes dispositivos.
+Compra: https://pay.herospark.com/matematica-do-zero-modulo-i-410186
+WhatsApp: (84) 98859-6256
 
-JavaScript: Para adicionar interatividade, como efeitos de transição e otimização da experiência do usuário.
-
-- Objetivo da Landing Page
-O objetivo principal desta landing page é vender o eBook de Matemática, utilizando estratégias de marketing digital, como Google Ads. A página foi projetada para ser simples, direta e focada na conversão, ou seja, transformar visitantes em compradores, com uma navegação fluida e uma chamada para ação clara.
-
-- Funcionalidades e Design
-Estrutura Responsiva: A página se adapta a diferentes tamanhos de tela, seja em desktop, tablet ou celular, garantindo uma boa experiência em qualquer dispositivo.
-
-Design Clean e Atraente: Com um layout que destaca as informações mais importantes e facilita a navegação, proporcionando uma experiência agradável.
-
-Interatividade: Uso de JavaScript para tornar a página mais dinâmica, com animações e transições suaves.
-
-Chamada para Ação Clara: A página é otimizada para aumentar as conversões, com botões de compra em destaque e formulários fáceis de preencher.
-
-*Acesse a landing page aqui*
-https://www.simeuquero.com.br/ebookmatematica/
-
-
+Hospedagem: Vercel (site estático, sem build).

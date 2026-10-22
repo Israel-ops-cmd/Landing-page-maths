@@ -1,187 +1,1153 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <title>E-book de Matemática</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#0B132B" />
+<title>E-book de Matemática do Professor Adriel Lucas | ENEM e concursos | Natal RN</title>
+<meta name="description" content="E-book de Matemática do Professor Adriel Lucas, de Natal RN: aprenda a base do zero para o ENEM, concursos e reforço escolar, com exercícios resolvidos e bônus do ENEM 2024. Venda para todo o Brasil." />
+<link rel="canonical" href="https://ebook-matematica-adriel.vercel.app/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:title" content="E-book de Matemática do Professor Adriel Lucas" />
+<meta property="og:description" content="Perca o medo da prova de matemática. Base do zero para ENEM e concursos, com exercícios resolvidos. De Natal RN para todo o Brasil." />
+<meta property="og:image" content="https://ebook-matematica-adriel.vercel.app/img/og-ebook-matematica.jpg" />
+<meta property="og:url" content="https://ebook-matematica-adriel.vercel.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "E-book de Matemática do Professor Adriel Lucas",
+  "description": "Matemática do zero para ENEM, concursos e reforço escolar. Módulo I com exercícios resolvidos e bônus do ENEM 2024 resolvido.",
+  "image": "https://ebook-matematica-adriel.vercel.app/img/ebook-matematica-do-zero.webp",
+  "brand": { "@type": "Person", "name": "Adriel Lucas" },
+  "offers": { "@type": "Offer", "price": "37.99", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://pay.herospark.com/matematica-do-zero-modulo-i-410186" }
+}
+</script>
+<style>
+:root{
+  --navy:#0B132B; --soft:#F4F7FA; --gold:#FFB703; --white:#ffffff;
+  --navy-90:rgba(11,19,43,.9); --navy-70:rgba(11,19,43,.72); --navy-10:rgba(11,19,43,.1); --navy-06:rgba(11,19,43,.06);
+  --soft-80:rgba(244,247,250,.8); --soft-60:rgba(244,247,250,.62); --soft-12:rgba(244,247,250,.12); --soft-06:rgba(244,247,250,.06);
+  --gold-20:rgba(255,183,3,.2);
+  --nav-h:68px; --pad:68px; --max:1344px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+html,body{background:var(--navy)}
+body{font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:400;color:var(--navy);-webkit-font-smoothing:antialiased;overflow-x:clip;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.nw{white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;z-index:99;background:var(--gold);color:var(--navy);padding:12px 18px;border-radius:999px;font-weight:700}
+.skip:focus{left:16px}
 
-   
-<script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
-    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '543386694986044'); 
-    fbq('track', 'PageView'); 
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
-  
-  
+/* progress */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:40;pointer-events:none}
+.progress i{display:block;height:100%;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:30;height:var(--nav-h);background:rgba(11,19,43,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--soft-06);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.nav-inner{max-width:var(--max);height:100%;margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;color:var(--white)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:19px;letter-spacing:-.01em;min-height:44px;white-space:nowrap}
+.brand-orb{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:15px;font-weight:900;color:var(--navy);background:radial-gradient(circle at 32% 28%,#fff1c2 0%,var(--gold) 45%,#d99a00 100%);box-shadow:0 0 14px rgba(255,183,3,.45),inset -2px -3px 6px rgba(120,70,0,.35)}
+.brand small{font-weight:400;opacity:.7;font-size:13px;margin-left:2px}
+.nav-right{display:flex;align-items:center;gap:30px}
+.nav-links{display:flex;white-space:nowrap;gap:30px;font-size:14px;font-weight:700;color:var(--soft-80)}
+.nav-links a{transition:color .2s;padding:12px 0}
+.nav-links a:hover{color:var(--gold)}
+.btn-open{background:var(--gold);color:var(--navy);font-weight:900;font-size:14px;padding:12px 20px;border-radius:999px;transition:transform .25s,box-shadow .25s;white-space:nowrap}
+.btn-open:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(255,183,3,.3)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;background:var(--soft-06);border:1px solid var(--soft-12);align-items:center;justify-content:center;position:relative}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:var(--white);border-radius:2px;transition:transform .25s,background .2s}
+.menu-btn span{position:relative}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.nav.open .menu-btn span{background:transparent}
+.nav.open .menu-btn span::before{top:0;transform:rotate(45deg)}
+.nav.open .menu-btn span::after{top:0;transform:rotate(-45deg)}
+.mobile-panel{display:none;position:absolute;top:calc(var(--nav-h) + 8px);left:16px;right:16px;background:rgba(11,19,43,.97);border:1px solid var(--soft-12);border-radius:18px;padding:8px;flex-direction:column;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.mobile-panel a{padding:14px 16px;border-radius:12px;font-weight:700;color:var(--soft-80);min-height:48px}
+.mobile-panel a:hover{background:var(--soft-06);color:var(--white)}
+.mobile-panel .btn-open{margin-top:6px;text-align:center;color:var(--navy)}
+.nav.open .mobile-panel{display:flex}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;line-height:1.25;gap:10px;min-height:56px;padding:0 30px;border-radius:999px;font-weight:900;font-size:17px;letter-spacing:-.005em;transition:filter .25s,background .25s,color .25s;will-change:transform}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-gold:hover{filter:brightness(1.06)}
+.btn-ghost{color:var(--white);border:2px solid var(--soft-12)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{filter:brightness(1.25)}
+.btn-line-navy{border:2px solid var(--navy);color:var(--navy)}
+.btn-line-navy:hover{background:var(--navy);color:var(--gold)}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;isolation:isolate;color:var(--white);background:var(--navy)}
+#stage{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0;touch-action:pan-y}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(255,255,255,.014) 0 1px,transparent 1px 7px),radial-gradient(120% 80% at 50% 0%,transparent 55%,rgba(0,0,0,.4) 100%)}
+.hero-inner{position:relative;z-index:2;pointer-events:none;max-width:var(--max);margin:0 auto;min-height:inherit;padding:calc(var(--nav-h) + 40px) var(--pad) 80px;display:flex;flex-direction:column;justify-content:center}
+.copy{max-width:min(580px,44vw);pointer-events:auto}
+.prof{position:absolute;z-index:-1;top:calc(var(--nav-h) + 24px);left:calc(var(--pad) + min(580px,44vw) + 2vw);height:min(calc(100vh - var(--nav-h) - 30px),calc(32vw * 1.22),600px);height:min(calc(100svh - var(--nav-h) - 30px),calc(32vw * 1.22),600px);pointer-events:none}
+.prof-light{position:absolute;z-index:-1;left:-45%;right:-45%;top:-4%;height:92%;background:radial-gradient(closest-side,rgba(255,183,3,.30),rgba(255,183,3,.13) 42%,rgba(255,183,3,.04) 70%,transparent 100%);opacity:0;transform:scale(.8);animation:lampOn 1.6s var(--ease) .7s forwards}
+.prof-light::after{content:"";position:absolute;left:8%;top:18%;width:46%;height:60%;background:radial-gradient(closest-side,rgba(244,247,250,.07),transparent)}
+.prof img{position:relative;height:100%;width:auto;-webkit-mask-image:linear-gradient(#000 60%,transparent 92%);mask-image:linear-gradient(#000 60%,transparent 92%);opacity:0;transform:translateY(30px);filter:brightness(.12) drop-shadow(0 0 0 rgba(255,183,3,0));animation:rise 1.2s var(--ease) .2s forwards,lightUp 1.8s var(--ease) .6s forwards}
+@keyframes lampOn{to{opacity:1;transform:none}}
+@keyframes lightUp{to{filter:brightness(1.04) drop-shadow(0 0 1px rgba(255,200,90,.45)) drop-shadow(8px -6px 20px rgba(255,183,3,.22))}}
+.hero h1{font-size:clamp(40px,5.1vw,72px);line-height:1.02;font-weight:900;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{margin-top:26px;color:var(--soft-80);font-size:clamp(17px,1.5vw,20px);line-height:1.6;max-width:530px}
+.hero .sub strong{color:var(--white);font-weight:700}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:38px;list-style:none;font-size:14px;color:var(--soft-60)}
+.proof b{display:block;color:var(--white);font-weight:900;font-size:22px;letter-spacing:-.02em;line-height:1.2}
+.reveal{opacity:0;transform:translateY(18px);animation:rise .9s var(--ease) forwards}
+.d1{animation-delay:.08s}.d2{animation-delay:.2s}.d3{animation-delay:.32s}.d4{animation-delay:.44s}
+@keyframes rise{to{opacity:1;transform:none}}
+.pi{position:absolute;left:0;top:0;z-index:3;pointer-events:none;font-weight:900;font-size:40px;line-height:1;color:var(--gold);text-shadow:0 0 18px rgba(255,183,3,.55),0 0 2px rgba(255,183,3,.9);transform:translate3d(-100px,-100px,0);opacity:0;transition:opacity .4s;will-change:transform}
+.pi.on{opacity:1}
+@media (pointer:fine){.hero.pi-mode,.hero.pi-mode #stage{cursor:none}.hero a{cursor:pointer}}
+.loader{position:absolute;z-index:2;width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,183,3,.18);border-top-color:var(--gold);transform:translate(-50%,-50%);animation:spin 1s linear infinite;transition:opacity .5s;left:70%;top:50%}
+.loader.hide{opacity:0}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.scroll-cue{position:absolute;z-index:2;left:var(--pad);bottom:28px;width:26px;height:42px;border:2px solid var(--soft-12);border-radius:14px}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold);animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+
+/* SECTIONS */
+section{position:relative}
+.sec{padding:140px 0}
+.bg-soft{background:var(--soft)}
+.bg-white{background:var(--white)}
+.bg-navy{background:var(--navy);color:var(--white)}
+.bg-gold{background:var(--gold);color:var(--navy)}
+.h2{font-size:clamp(34px,4.6vw,64px);line-height:1.04;font-weight:900;letter-spacing:-.035em;max-width:18ch}
+.h2 em{font-style:normal;color:var(--gold)}
+.bg-soft .h2 em,.bg-white .h2 em{color:var(--navy);background:linear-gradient(transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%)}
+.lead{font-size:clamp(17px,1.4vw,19px);color:var(--navy-70);max-width:38ch}
+.bg-navy .lead{color:var(--soft-60)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-bottom:64px}
+
+/* word reveal */
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.split .w>span{display:inline-block;transform:translateY(105%);transition:transform .9s var(--ease)}
+.split.in .w>span{transform:none}
+
+/* generic reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv-img{opacity:0;transform:translateY(50px) scale(.94);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.rv-img.in{opacity:1;transform:none}
+
+/* SERVIÇOS bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.card{position:relative;border-radius:28px;padding:36px;background:var(--white);border:1px solid var(--navy-06);overflow:hidden;isolation:isolate}
+.card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,183,3,.16),transparent 60%)}
+.card:hover::before{opacity:1}
+.card h3{font-size:clamp(22px,2vw,28px);line-height:1.15;font-weight:900;letter-spacing:-.02em}
+.card p{margin-top:14px;color:var(--navy-70);font-size:16px}
+.c-main{grid-column:span 7;grid-row:span 2;display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--navy);color:var(--white);padding:44px}
+.c-main p{color:var(--soft-60)}
+.c-main .cover{align-self:center}
+.c-main .cover img{filter:drop-shadow(0 30px 40px rgba(0,0,0,.45));transform:rotate(-3deg)}
+.c-ex{grid-column:span 5}
+.c-bonus{grid-column:span 5;background:var(--gold);border-color:transparent}
+.c-bonus p{color:var(--navy-90)}
+.c-acc{grid-column:span 12;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;background:var(--soft)}
+.c-acc .big{font-size:clamp(48px,6vw,88px);font-weight:900;letter-spacing:-.05em;line-height:1}
+.tag{display:inline-block;font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px;background:var(--navy-06);margin-bottom:18px}
+.c-main .tag{background:var(--soft-12)}
+.c-bonus .tag{background:rgba(11,19,43,.12)}
+/* timeline */
+.timeline{list-style:none;margin-top:26px;position:relative;padding-left:28px}
+.timeline::before,.timeline::after{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;border-radius:2px}
+.timeline::before{background:var(--soft-12)}
+.timeline::after{background:var(--gold);transform-origin:50% 0;transform:scaleY(var(--p,0))}
+.timeline li{position:relative;padding:8px 0;font-weight:700;font-size:15px;color:var(--soft-60);transition:color .4s}
+.timeline li::before{content:"";position:absolute;left:-27px;top:15px;width:14px;height:14px;border-radius:50%;background:var(--navy);border:2px solid var(--soft-12);transition:background .4s,border-color .4s,box-shadow .4s;z-index:1}
+.timeline li.on{color:var(--white)}
+.timeline li.on::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 5px rgba(255,183,3,.18)}
+
+/* DIFERENCIAIS stack */
+.stack{display:grid;gap:26px;margin-top:10px}
+.stack-card{position:sticky;top:calc(var(--nav-h) + 28px + var(--i) * 18px);display:grid;grid-template-columns:120px 1fr;gap:32px;align-items:start;min-height:280px;padding:48px;border-radius:30px;background:#16203f;border:1px solid var(--soft-06);transform-origin:50% 0;transform:scale(var(--s,1));filter:brightness(var(--b,1));will-change:transform}
+.stack-card:nth-child(2){background:#1b2749}
+.stack-card:nth-child(3){background:#203054}
+.stack-card:nth-child(4){background:var(--gold);color:var(--navy)}
+.stack-card .num{font-size:88px;font-weight:900;line-height:.9;letter-spacing:-.05em;color:var(--gold)}
+.stack-card:nth-child(4) .num{color:var(--navy)}
+.stack-card h3{font-size:clamp(26px,3vw,42px);font-weight:900;letter-spacing:-.03em;line-height:1.08;max-width:18ch}
+.stack-card p{margin-top:16px;font-size:18px;color:var(--soft-60);max-width:46ch}
+.stack-card:nth-child(4) p{color:var(--navy-90)}
+.stats{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;margin-top:90px;border-top:1px solid var(--soft-12);padding-top:50px}
+.stat .odo{font-size:clamp(64px,9vw,140px);font-weight:900;letter-spacing:-.06em;line-height:1;color:var(--white);display:flex}
+.stat:first-child .odo{color:var(--gold)}
+.stat span.l{display:block;margin-top:10px;font-weight:700;color:var(--soft-60);font-size:16px}
+.reel{display:inline-block;height:1em;overflow:hidden;line-height:1}
+.reel>span{display:flex;flex-direction:column;transition:transform 1.8s cubic-bezier(.16,1,.3,1)}
+.reel>span>span{height:1em;display:block}
+
+/* DEPOIMENTOS horizontal */
+.hs{position:relative}
+.hs-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:var(--nav-h)}
+.hs-head{max-width:var(--max);width:100%;margin:0 auto;padding:0 var(--pad);display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.hs-track{display:flex;gap:24px;padding:48px var(--pad) 0;will-change:transform;width:max-content}
+.quote{flex:none;width:min(520px,82vw);border-radius:28px;padding:40px;background:var(--soft);border:1px solid var(--navy-06);display:flex;flex-direction:column;justify-content:space-between;gap:30px;min-height:340px}
+.quote:nth-child(2n){background:var(--navy);color:var(--white);transform:translateY(34px)}
+.quote:nth-child(3){background:var(--gold)}
+.quote blockquote{font-size:clamp(19px,1.7vw,23px);line-height:1.45;font-weight:700;letter-spacing:-.01em}
+.quote blockquote::before{content:"\201C";display:block;font-size:72px;line-height:.6;font-weight:900;color:var(--gold);margin-bottom:10px}
+.quote:nth-child(3) blockquote::before{color:var(--navy)}
+.who{display:flex;align-items:center;gap:14px}
+.avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:900;background:var(--navy);color:var(--gold);flex:none}
+.quote:nth-child(2n) .avatar{background:var(--gold);color:var(--navy)}
+.who b{display:block;font-weight:900}
+.who small{font-size:14px;opacity:.7}
+.hs-note{margin-top:30px;color:var(--navy-70);font-size:15px}
+.quote.end{background:transparent;border:2px dashed var(--navy-10);justify-content:center;align-items:flex-start}
+.quote.end h3{font-size:30px;font-weight:900;letter-spacing:-.03em;line-height:1.1}
+
+/* SOBRE */
+.about{display:grid;grid-template-columns:5fr 6fr;gap:80px;align-items:center}
+.photo{position:relative;border-radius:32px;overflow:hidden;background:radial-gradient(circle at 50% 70%,#22325f 0%,#16203f 60%);aspect-ratio:4/5}
+.photo img{position:absolute;bottom:0;left:50%;width:92%;transform:translateX(-50%);clip-path:circle(var(--r,14%) at 50% 45%);transition:clip-path .1s linear}
+.photo::after{content:"";position:absolute;left:10%;right:10%;bottom:-40px;height:120px;background:radial-gradient(closest-side,rgba(255,183,3,.35),transparent);z-index:-0;pointer-events:none}
+.badge{position:absolute;z-index:2;left:22px;top:22px;background:var(--gold);color:var(--navy);border-radius:18px;padding:14px 18px;font-weight:900;line-height:1.2}
+.badge small{display:block;font-weight:700;font-size:13px}
+.about p{color:var(--soft-60);font-size:18px;margin-top:22px;max-width:56ch}
+.about p strong{color:var(--white);font-weight:700}
+.fill{margin-top:110px;font-size:clamp(28px,3.8vw,56px);font-weight:900;line-height:1.15;letter-spacing:-.03em;max-width:24ch}
+.fill .fw{color:rgba(244,247,250,var(--a,.42));transition:color .15s linear}
+.fill .fw.g{color:rgba(255,183,3,var(--a,.5))}
+
+/* ATENDIMENTO */
+.info{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.i-where{grid-column:span 5;background:var(--navy);color:var(--white)}
+.i-where p{color:var(--soft-60)}
+.i-hours{grid-column:span 4}
+.i-pay{grid-column:span 3;background:var(--gold);border-color:transparent}
+.i-pay p{color:var(--navy-90)}
+.hours{list-style:none;margin-top:18px}
+.hours li{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--navy-10);font-weight:700;font-size:15px}
+.hours li span{color:var(--navy-70);font-weight:400;text-align:right}
+.map-dot{display:flex;align-items:center;gap:12px;margin-top:26px;font-weight:700}
+.map-dot i{width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(255,183,3,.6);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 16px rgba(255,183,3,0)}100%{box-shadow:0 0 0 0 rgba(255,183,3,0)}}
+.faq{grid-column:span 12;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:20px}
+.faq details{background:var(--white);border:1px solid var(--navy-06);border-radius:22px;padding:4px 26px}
+.faq summary{list-style:none;cursor:pointer;font-weight:900;font-size:18px;padding:20px 30px 20px 0;position:relative;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:14px;font-size:28px;font-weight:400;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:22px;color:var(--navy-70)}
+
+/* FINAL */
+.final{padding:150px 0 130px;overflow:hidden}
+.final-grid{display:grid;grid-template-columns:7fr 5fr;gap:60px;align-items:center}
+.final .h2{max-width:14ch;font-size:clamp(38px,5.4vw,80px)}
+.price{display:flex;align-items:flex-end;gap:18px;margin-top:34px;flex-wrap:wrap}
+.price s{font-size:20px;font-weight:700;opacity:.6}
+.price b{font-size:clamp(56px,6vw,92px);font-weight:900;letter-spacing:-.05em;line-height:.9}
+.price b small{font-size:.4em;letter-spacing:-.02em;margin-right:6px}
+.final p.desc{margin-top:18px;font-size:18px;max-width:46ch;color:var(--navy-90)}
+.final .cta-row{margin-top:36px}
+.guar{background:var(--navy);color:var(--white);border-radius:32px;padding:40px;display:grid;gap:22px;justify-items:start}
+.ring{position:relative;width:150px;height:150px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:10}
+.ring .bgc{stroke:var(--soft-12)}
+.ring .fgc{stroke:var(--gold);stroke-linecap:round;stroke-dasharray:408;stroke-dashoffset:408;transition:stroke-dashoffset 2s cubic-bezier(.16,1,.3,1)}
+.ring.in .fgc{stroke-dashoffset:0}
+.ring div{position:absolute;inset:0;display:grid;place-items:center;text-align:center;line-height:1}
+.ring b{font-size:52px;font-weight:900;color:var(--gold);display:block}
+.ring small{font-weight:700;font-size:13px}
+.guar h3{font-size:26px;font-weight:900;letter-spacing:-.02em}
+.guar p{color:var(--soft-60)}
+
+/* FOOTER */
+footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-size:15px}
+.foot{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start}
+.foot .brand{color:var(--white)}
+.foot p{margin-top:14px;max-width:40ch}
+.foot nav{display:flex;flex-direction:column;gap:2px}
+.foot nav a{color:var(--white);font-weight:700;padding:10px 0;min-height:44px;display:flex;align-items:center}
+.foot nav a:hover{color:var(--gold)}
+.copyright{margin-top:50px;padding-top:24px;border-top:1px solid var(--soft-12);font-size:13px}
+
+/* WHATSAPP float */
+.wa{position:fixed;z-index:35;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:transform .35s var(--ease),opacity .35s}
+.wa svg{width:30px;height:30px;fill:#fff}
+.wa:hover{transform:scale(1.07)}
+.wa.away{opacity:0;transform:scale(.6);pointer-events:none}
+
+/* RESPONSIVE */
+@media (max-width:1100px){
+  :root{--pad:40px}
+  .nav-links{gap:22px}
+  .c-main{grid-column:span 12;grid-row:auto}
+  .c-ex,.c-bonus{grid-column:span 6}
+  .about{gap:50px}
+  .i-where{grid-column:span 12}.i-hours{grid-column:span 7}.i-pay{grid-column:span 5}
+}
+@media (max-width:1180px){ .nav-links{display:none} .menu-btn{display:inline-flex} .nav-right{gap:10px} }
+@media (max-width:960px){ .nav-links{display:none} .menu-btn{display:inline-flex} .nav-right{gap:10px} }
+@media (max-width:860px){
+  .hero-inner{justify-content:flex-end;text-align:center;align-items:center;padding:calc(var(--nav-h) + min(44vh,340px)) 24px 48px}
+  .copy{max-width:560px}
+  .prof{left:4%;top:calc(var(--nav-h) + 6px);bottom:auto;width:auto;height:calc(min(44vh,340px) - 6px)}
+  .hero h1{font-size:clamp(32px,8.6vw,52px)}
+  .hero .sub{margin:14px auto 0;font-size:16px}
+  .cta-row{justify-content:center;margin-top:24px}
+  .proof{display:grid;grid-template-columns:repeat(3,1fr);margin-top:26px;gap:10px;font-size:13px;line-height:1.35}
+  .proof b{font-size:18px}
+  .scroll-cue{display:none}
+  .sec{padding:96px 0}
+  .sec-head{margin-bottom:44px}
+  .c-main{grid-template-columns:1fr;padding:32px}
+  .c-main .cover{max-width:260px;margin:0 auto;order:-1}
+  .c-ex,.c-bonus{grid-column:span 12}
+  .stack-card{grid-template-columns:1fr;gap:12px;padding:32px;min-height:0}
+  .stack-card .num{font-size:56px}
+  .stats{grid-template-columns:1fr 1fr;margin-top:60px}
+  .stat:first-child{grid-column:span 2}
+  .about{grid-template-columns:1fr}
+  .photo{max-width:440px;width:100%}
+  .fill{margin-top:70px}
+  .i-hours,.i-pay{grid-column:span 12}
+  .faq{grid-template-columns:1fr}
+  .final-grid{grid-template-columns:1fr}
+  .final{padding:100px 0 90px}
+  .quote{min-height:300px;padding:30px}
+  .quote:nth-child(2n){transform:translateY(18px)}
+}
+@media (max-width:480px){
+  :root{--pad:16px;--nav-h:62px}
+  .brand{font-size:17px}.brand small{display:none}
+  .btn-open{padding:10px 14px;font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+  .hero-inner{padding:calc(var(--nav-h) + min(40vh,300px)) 16px 36px}
+  .prof{height:calc(min(40vh,300px) - 6px);left:2%}
+  .hide-xs{display:none}
+  .brand{gap:8px}
+  .btn{padding:12px 20px}
+  .wa{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom))}
+  .btn{width:100%;min-height:54px;font-size:16px;padding:0 20px}
+  .cta-row{gap:10px}
+  .card{padding:26px;border-radius:24px}
+  .c-main{padding:26px}
+  .stack-card{padding:26px;border-radius:24px}
+  .stack-card p{font-size:16px}
+  .h2{font-size:clamp(30px,9vw,40px)}
+  .final .h2{font-size:clamp(34px,10vw,44px)}
+  .lead,.about p,.final p.desc{font-size:16px}
+  .fill{font-size:clamp(25px,7.6vw,32px)}
+  .guar{padding:28px}
+  .quote blockquote{font-size:17px}
+  .hours li{font-size:14px}
+  .wa{width:56px;height:56px}
+}
+@media (max-height:760px) and (min-width:861px){ .hero h1{font-size:clamp(36px,4.2vw,58px)} .hero .sub{margin-top:18px} .cta-row{margin-top:24px} .proof{margin-top:24px} .hero-inner{padding-bottom:48px} }
+@media (max-height:820px){
+  .hs-head .h2{font-size:clamp(30px,3.6vw,46px)}
+  .hs-track{padding-top:28px}
+  .quote{min-height:0;padding:30px;gap:22px}
+  .quote blockquote{font-size:clamp(16px,1.4vw,19px)}
+  .quote blockquote::before{font-size:54px}
+  .quote:nth-child(2n){transform:translateY(16px)}
+  .hs-note{margin-top:14px}
+}
+@media (max-height:620px){ .quote:nth-child(2n){transform:none} .hs-note{display:none} }
+@media (prefers-reduced-motion:reduce){
+  .prof img{animation:none;opacity:1;transform:none;filter:drop-shadow(0 0 1px rgba(255,200,90,.45)) drop-shadow(8px -6px 20px rgba(255,183,3,.22))}
+  .prof-light{animation:none;opacity:1;transform:none}
+  .reveal{animation:none;opacity:1;transform:none}
+  .rv,.rv-img,.split .w>span{opacity:1!important;transform:none!important;transition:none!important}
+  .photo img{clip-path:none}
+  .hs-pin{position:relative;height:auto;padding:100px 0}
+  .hs-track{overflow-x:auto;width:auto;scroll-snap-type:x mandatory}
+  .quote{scroll-snap-align:start}
+}
+</style>
 </head>
 <body>
-    <main>
-        <header>
-            <div id="titulo">
-                <h1>APRENDA MATEMÁTICA DE UMA VEZ POR TODAS!</h1>
-                <p>O e-book mais completo de matemática para <br> ENEM e Vestibulares <strong>do zero ao gabarito.</strong></p>
-                <button type="button" onclick="scrollToPayment();">Quero o meu e-book agora!</button>
-            </div>
-            <div id="principal">
-                <div id="imagem">
-                    <img src="assets/adrielfundo.png" alt="">
-                </div>
-            </div>
-        </header>
-        <div id="menuinformacional">
-            <ul>
-                <li id="livro">Exercícios resolvidos com explicação detalhada</li>
-                <li id="bloco">40 Páginas de Conteúdo</li>
-                <li id="foguete">Aprendizagem acelerada</li>
-            </ul>
+<a class="skip" href="#ebook">Pular para o conteúdo</a>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#topo"><span class="brand-orb" aria-hidden="true">x²</span>Adriel Lucas <small>Matemática</small></a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Seções">
+        <a href="#ebook">O que tem no e-book</a>
+        <a href="#metodo">Por que funciona</a>
+        <a href="#alunos">Alunos</a>
+        <a href="#sobre">Quem sou</a>
+        <a href="#atendimento">Atendimento</a>
+      </nav>
+      <a class="btn-open" href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank" rel="noopener">Comprar<span class="hide-xs"> por R$ 37,99</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mPanel"><span></span></button>
+    </div>
+    <div class="mobile-panel" id="mPanel">
+      <a href="#ebook">O que tem no e-book</a>
+      <a href="#metodo">Por que funciona</a>
+      <a href="#alunos">Alunos</a>
+      <a href="#sobre">Quem sou</a>
+      <a href="#atendimento">Atendimento</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+<section class="hero" id="hero" aria-label="Apresentação">
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="loader hide" id="loader" aria-hidden="true"></div>
+  <div class="pi" id="pi" aria-hidden="true">π</div>
+  <div class="hero-inner">
+    <div class="prof" id="prof">
+      <div class="prof-light" aria-hidden="true"></div>
+      <img src="img/adriel-lucas.webp" width="640" height="782" fetchpriority="high" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
+    </div>
+    <div class="copy">
+      <h1 class="reveal d1">Perca o medo da prova de matemática em <em>40 páginas</em></h1>
+      <p class="sub reveal d2">Eu sou o <strong>Adriel Lucas</strong>, professor de matemática. Escrevi este e-book para quem trava na base: fração, MMC, equação. Você aprende do zero resolvendo questões no estilo ENEM e concurso, sem enrolação.</p>
+      <div class="cta-row reveal d3">
+        <a class="btn btn-gold magnet" href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank" rel="noopener">Comprar o e-book por <span class="nw">R$ 37,99</span></a>
+        <a class="btn btn-ghost magnet" href="https://wa.me/5584988596256?text=Oi%2C%20professor%20Adriel!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20e-book%20de%20matem%C3%A1tica." target="_blank" rel="noopener">Tirar dúvida no WhatsApp</a>
+      </div>
+      <ul class="proof reveal d4">
+        <li><b>4 anos</b>ensinando matemática</li>
+        <li><b>Centenas</b>de alunos aprovados</li>
+        <li><b>100%</b>focado na prática</li>
+      </ul>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<section class="sec bg-soft" id="ebook" aria-labelledby="t-ebook">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2 split" id="t-ebook">Tudo o que você precisa para <em>parar de errar</em> a base</h2>
+      <p class="lead rv">Um material curto e direto, pensado para quem tem prova chegando e precisa ver resultado rápido.</p>
+    </div>
+    <div class="bento">
+      <article class="card c-main rv">
+        <div>
+          <span class="tag">Módulo I</span>
+          <h3>Módulo I completo: a base que cai em toda prova</h3>
+          <p>Cinco temas na ordem certa, um apoiando o outro.</p>
+          <ol class="timeline" id="timeline">
+            <li>Sistemas de numeração</li>
+            <li>Noções de conjuntos</li>
+            <li>Conjuntos numéricos, frações e decimais</li>
+            <li>MMC e MDC</li>
+            <li>Equação do primeiro grau</li>
+          </ol>
         </div>
-        <div id="sumario">
-            <h2>Sumário</h2>
-            <div id="modulos">
-                <div id="modulo1">
-                    <a href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank">
-                        <button class="mod">Módulo I</button>
-                    </a>
-                    <ul class="point">
-                        <li>Sistemas de Numeração</li>
-                        <li>Noções Básicas de Conjuntos</li>
-                        <li>Conjuntos Numéricos e Operações Básicas (Frações e Decimais)</li>
-                        <li>MMC e MDC</li>
-                        <li>Equação do Primeiro Grau</li>
-                    </ul>
-                </div>
-            </div>
-        </div>              
-        <div id="depoimentos">
-            <h2>O QUE OS ALUNOS DIZEM SOBRE O EBOOK</h2>
-            <div id="depoimentos-container">
-                <div class="depoimento-card">
-                    <img src="assets/gael.jpg" alt="Depoimento Gael">
-                </div>
-                <div class="depoimento-card">
-                    <img src="assets/pablo.jpg" alt="Depoimento Pablo">
-                </div>
-                <div class="depoimento-card">
-                    <img src="assets/camille.jpg" alt="Depoimento Camille">
-                </div>
-                <div class="depoimento-card">
-                    <img src="assets/luis.jpg" alt="Depoimento Luis">
-                </div>
-            </div>
-        </div>          
-        <div id="pagamento">
-            <h3>Seus resultados começam aqui: aprenda matemática do zero e destrave seu potencial!</h3>
-            <h2>OFERTA ESPECIAL</h2>
-            <h4>De <del>R$ 79,99</del> Por apenas</h2>
-            <h2 id="pg">R$ 37,99</h2>
-            <a href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank">
-                <button type="submit">Transforme sua carreira agora!</button>
-            </a>
+        <div class="cover rv-img"><img src="img/ebook-matematica-do-zero.webp" width="564" height="720" loading="lazy" decoding="async" alt="Capa do e-book Matemática do Zero, do Professor Adriel Lucas, com a foto dele de braços cruzados" /></div>
+      </article>
+      <article class="card c-ex rv">
+        <span class="tag">Prática</span>
+        <h3>Exercícios resolvidos passo a passo</h3>
+        <p>Cada questão vem com a resolução explicada do jeito que eu explico no quadro. Você enxerga onde costuma errar e para de errar.</p>
+      </article>
+      <article class="card c-bonus rv">
+        <span class="tag">Bônus</span>
+        <h3>ENEM 2024 resolvido, sem pagar nada a mais</h3>
+        <p>Todas as questões de matemática do ENEM 2024 resolvidas e comentadas por mim, junto com o e-book.</p>
+      </article>
+      <article class="card c-acc rv">
+        <div>
+          <h3>Acesso para sempre, no celular ou no computador</h3>
+          <p>Pagou uma vez, é seu. Estuda na hora que der, quantas vezes quiser.</p>
         </div>
-        <div id="garantia">
-            <h2>Garantia de Satisfação de 7 Dias</h2>
-            <p>Você pode navegar por toda estrutura da plataforma por 7 dias após a sua compra e, se você entender que o nosso e-book não é para você, nós devolvemos 100% do seu investimento, sem você precisar ficar explicando o porquê.</p>
-            <div id="garantia-icone">
-                <img src="assets/garantia.png" alt="Ícone de Garantia">
-            </div>
-            <a href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank">
-                <button>Quero garantir meu e-book agora!</button>
-            </a>
-        </div>  
-        <div id="bonus">
-            <div id="bonus-texto">
-                <h3>🎁 Bônus Exclusivo: Todas as questões do Enem 2024 resolvidas e comentadas!</h3>
-                <p>Ao adquirir o e-book, você recebe gratuitamente um material exclusivo com TODAS as questões de 2024 resolvidas e comentadas por especialistas.</p>
-                <p>Uma oportunidade única para aprofundar seus conhecimentos e garantir sua aprovação!</p>
-                <a href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank">
-                    <button id="bonus-btn">Quero meu e-book + Bônus Agora!</button>
-                </a>
-            </div>
-            <div id="bonus-imagem">
-                <img src="assets/bonus.png" alt="Imagem do material bônus">
-            </div>
-        </div>  
-        <div id="faq">
-            <h2>Perguntas Frequentes</h2>
-            <div class="faq-container">
-                <div class="faq-question">
-                    <h3>Terei acesso por quanto tempo?</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>O acesso ao curso é vitalício, ou seja, você poderá acessar o conteúdo sempre que desejar, sem limitação de tempo.</p>
-                </div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-question">
-                    <h3>Posso acessar de qualquer lugar?</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim, você pode acessar o curso de qualquer lugar, desde que tenha uma conexão à internet. O conteúdo está disponível online, permitindo que você estude de forma flexível, onde e quando quiser.</p>
-                </div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-question">
-                    <h3>O e-book serve para quem não sabe nada de matemática?</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim, o e-book foi desenvolvido para quem está começando do zero. Ele apresenta os conceitos de forma clara e didática, com uma abordagem simples que facilita o entendimento, mesmo para quem não tem nenhum conhecimento prévio em matemática.</p>
-                </div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-question">
-                    <h3>Tem professor para tirar dúvidas?</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim, ao adquirir o e-book você tem acesso ao suporte exclusivo para tirar dúvidas diretamente com o professor. </p>
-                </div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-question">
-                    <h3>Já faço cursinho, vale a pena adquirir o e-book?</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim, o e-book pode ser uma excelente ferramenta complementar para quem já faz cursinho. Ele oferece uma abordagem prática e objetiva, com questões resolvidas e dicas valiosas que podem ajudá-lo a fixar o conteúdo e melhorar seu desempenho nas provas. Além disso, o acesso imediato e flexível ao material facilita o estudo em paralelo ao seu cursinho. </p>
-                </div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-question">
-                    <h3>Quais são os métodos de pagamento?</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>Você pode fazer o pagamento via cartão, de crédito ou débito, e PIX para ser liberado o acesso na hora. Você pode fazer via boleto, porém leva até 3 dias para você receber o acesso ao e-book.
-                    </p>
-                </div>
-            </div>
-        </div>  
-        <div id="identificacao">
-            <img width="500" height="500" src="assets/adrielfundo.png" alt="">
-            <div id="text">
-                <h2>Quem é o Professor?</h2>
-                <p>
-                    Olá! <br><br>
-                    Sou o professor Adriel Lucas, formado na UFRN (Universidade Federal do Rio Grande do Norte). Apesar de ter ingressado na Universidade em 2019, desde 2016, no ensino médio, eu tinha certeza de que queria ser professor, afinal comecei a ministrar aulas de música informalmente. 
-                    <br>Ao escolher minha carreira profissional, decidi que queria ajudar pessoas a aprenderem uma matéria tão temida: a matemática e, desde então, tenho auxiliado pessoas e ajudado a desenvolver o pensamento lógico matemático. <br> E assim surgiu o e-book de matemática, onde disponibilizo um conteúdo único, de fácil entendimento e rápida absorção, conquistando a cada dia mais alunos que se identificam com a minha forma alegre de ensinar e evoluem aprendendo com o meu método inovador.
-                </p>
-            </div>
-        </div>                        
-        <footer>
-            <p>Copyright@E-book de Matemática</p>
-        </footer>
-        <a href="https://wa.me/5584988596256" target="_blank" id="whatsapp-icon">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </main>   
+        <div class="big" aria-hidden="true">1x R$ 37,99</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-navy" id="metodo" aria-labelledby="t-metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2 split" id="t-metodo">Por que meus alunos <em>destravam</em> mais rápido</h2>
+      <p class="lead rv">Quatro escolhas que fiz quando montei o material. Todas pensadas em quem já travou na prova.</p>
+    </div>
+    <div class="stack" id="stack">
+      <article class="stack-card" style="--i:0"><div class="num">01</div><div><h3>Você começa do zero de verdade</h3><p>Não pulo etapa. Se você esqueceu como somar fração, a gente começa daí.</p></div></article>
+      <article class="stack-card" style="--i:1"><div class="num">02</div><div><h3>Mais questão, menos teoria</h3><p>O material é 100% focado na prática. Explico o necessário e já coloco você para resolver.</p></div></article>
+      <article class="stack-card" style="--i:2"><div class="num">03</div><div><h3>Atalhos para ganhar tempo na prova</h3><p>Mostro os caminhos curtos que eu uso para resolver fração, MMC e equação sem fazer conta gigante.</p></div></article>
+      <article class="stack-card" style="--i:3"><div class="num">04</div><div><h3>Travou? Fala comigo</h3><p>Quem compra tem suporte direto comigo pelo WhatsApp. Sem robô e sem fila.</p></div></article>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="odo" data-count="40">40</div><span class="l">páginas direto ao ponto</span></div>
+      <div class="stat"><div class="odo" data-count="5">5</div><span class="l">temas da base</span></div>
+      <div class="stat"><div class="odo" data-count="7">7</div><span class="l">dias de garantia</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="hs bg-white" id="alunos" aria-labelledby="t-alunos">
+  <div class="hs-pin">
+    <div class="hs-head">
+      <h2 class="h2 split" id="t-alunos">Quem estudou comigo <em>conta como foi</em></h2>
+      <p class="hs-note">Mensagens reais que recebi dos meus alunos no WhatsApp.</p>
+    </div>
+    <div class="hs-track" id="track">
+      <figure class="quote"><blockquote>Me ajudou muito, sério. A matemática básica sempre foi um desafio pra mim, mas com o seu e-book eu consegui entender de forma mais clara. Minhas notas em matemática aumentaram demais.</blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">CF</span><span><b>Camille Félix</b><small>Aluna do e-book</small></span></figcaption></figure>
+      <figure class="quote"><blockquote>A prova já está chegando e eu não tenho muito tempo para estudar conceito por conceito, mas graças ao seu livro consegui relembrar e fazer vários exercícios sobre o assunto.</blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">PS</span><span><b>Pablo dos Santos</b><small>Aluno do e-book</small></span></figcaption></figure>
+      <figure class="quote"><blockquote>Você é um verdadeiro gênio em ministrar aulas e ensinar coisas difíceis de maneira simples e completa.</blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">GZ</span><span><b>Gael Zanellato</b><small>Aluno</small></span></figcaption></figure>
+      <figure class="quote"><blockquote>Sem sua ótima didática e metodologia eu não teria desenvolvido a paixão pela matemática e nem o conhecimento que tenho hoje.</blockquote><figcaption class="who"><span class="avatar" aria-hidden="true">LF</span><span><b>Luis Felipe</b><small>Aluno</small></span></figcaption></figure>
+      <div class="quote end"><h3>A próxima mensagem pode ser a sua.</h3><a class="btn btn-navy magnet" href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank" rel="noopener">Quero começar hoje</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-navy" id="sobre" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <div class="about">
+      <div class="photo" id="photo">
+        <div class="badge">4 anos<small>dando aula</small></div>
+        <img src="img/adriel-lucas.webp" width="640" height="782" loading="lazy" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
+      </div>
+      <div>
+        <h2 class="h2 split" id="t-sobre">Prazer, sou o Adriel. Ensino matemática para quem <em>acha que não nasceu pra ela</em></h2>
+        <p class="rv">Sou formado pela <strong>UFRN, em Natal</strong>. Dou aula há <strong>4 anos</strong> e já acompanhei <strong>centenas de alunos</strong> até a aprovação no ENEM, em concurso e no reforço da escola.</p>
+        <p class="rv">Escrevi este e-book do jeito que eu explico em sala: com calma, com exemplo e com muita questão.</p>
+        <div class="cta-row rv"><a class="btn btn-gold magnet" href="https://wa.me/5584988596256?text=Oi%2C%20professor%20Adriel!%20Quero%20saber%20mais%20sobre%20o%20e-book%20de%20matem%C3%A1tica." target="_blank" rel="noopener">Falar comigo no WhatsApp</a></div>
+      </div>
+    </div>
+    <p class="fill" id="fill">Quase todo mundo que trava em matemática não tem problema com a matéria difícil. Tem um <span data-g>buraco na base.</span> Este e-book existe para <span data-g>fechar esse buraco.</span></p>
+  </div>
+</section>
+
+<section class="sec bg-soft" id="atendimento" aria-labelledby="t-atend">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2 split" id="t-atend">Você estuda de qualquer lugar do Brasil, e eu respondo <em>daqui de Natal</em></h2>
+    </div>
+    <div class="info">
+      <article class="card i-where rv">
+        <span class="tag" style="background:var(--soft-12)">Onde</span>
+        <h3>Natal, Rio Grande do Norte</h3>
+        <p>O e-book é 100% online e chega no seu e-mail logo depois do pagamento. Serve para quem está em qualquer cidade do país.</p>
+        <div class="map-dot"><i aria-hidden="true"></i>Atendendo todo o Brasil</div>
+      </article>
+      <article class="card i-hours rv">
+        <span class="tag">Horário</span>
+        <h3>Mandou mensagem, eu respondo</h3>
+        <ul class="hours">
+          <li>Dias <span>Todos, inclusive fim de semana</span></li>
+          <li>Horário <span>Qualquer hora</span></li>
+          <li>Quem responde <span>Eu mesmo, sem atendente</span></li>
+        </ul>
+      </article>
+      <article class="card i-pay rv">
+        <span class="tag">Pagamento</span>
+        <h3>Cartão e PIX liberam na hora</h3>
+        <p>Boleto também funciona, mas leva até 3 dias úteis para liberar.</p>
+      </article>
+      <div class="faq rv">
+        <details><summary>Serve para quem não sabe nada?</summary><p>Serve. Foi escrito para quem está começando do zero, com exemplo antes de cada exercício.</p></details>
+        <details><summary>Já faço cursinho, vale a pena?</summary><p>Vale. Você usa o e-book para treinar a base que o cursinho passa rápido demais.</p></details>
+        <details><summary>Por quanto tempo tenho acesso?</summary><p>Para sempre. Você paga uma vez e pode voltar no material quando quiser.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final bg-gold" id="comprar" aria-labelledby="t-final">
+  <div class="wrap final-grid">
+    <div>
+      <h2 class="h2 split" id="t-final">Sua próxima prova pode ser a primeira em que você não trava</h2>
+      <div class="price rv"><s>De R$ 79,99</s><b><small>R$</small>37,99</b></div>
+      <p class="desc rv">Pagamento único, acesso para sempre e o ENEM 2024 resolvido de bônus.</p>
+      <div class="cta-row rv">
+        <a class="btn btn-navy magnet" href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank" rel="noopener">Garantir meu e-book por <span class="nw">R$ 37,99</span></a>
+        <a class="btn btn-line-navy magnet" href="https://wa.me/5584988596256?text=Oi%2C%20professor%20Adriel!%20Quero%20comprar%20o%20e-book%20de%20matem%C3%A1tica." target="_blank" rel="noopener">Comprar pelo WhatsApp</a>
+      </div>
+    </div>
+    <aside class="guar rv" aria-label="Garantia de 7 dias">
+      <div class="ring" id="ring">
+        <svg viewBox="0 0 150 150" aria-hidden="true"><circle class="bgc" cx="75" cy="75" r="65"/><circle class="fgc" cx="75" cy="75" r="65"/></svg>
+        <div><span><b>7</b><small>dias</small></span></div>
+      </div>
+      <h3>Garantia sem pergunta</h3>
+      <p>Você tem 7 dias para conhecer o material. Se achar que não é para você, eu devolvo 100% do valor, sem precisar explicar o motivo.</p>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#topo"><span class="brand-orb" aria-hidden="true">x²</span>Adriel Lucas</a>
+        <p>E-book de Matemática do Professor Adriel Lucas. Natal, RN. Atendimento para todo o Brasil.</p>
+      </div>
+      <nav aria-label="Contato">
+        <a href="https://www.instagram.com/adriellucas.prof/" target="_blank" rel="noopener">Instagram @adriellucas.prof</a>
+        <a href="https://wa.me/5584988596256" target="_blank" rel="noopener">WhatsApp (84) 98859-6256</a>
+        <a href="https://pay.herospark.com/matematica-do-zero-modulo-i-410186" target="_blank" rel="noopener">Comprar o e-book</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> E-book de Matemática do Professor Adriel Lucas. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa" id="wa" href="https://wa.me/5584988596256?text=Oi%2C%20professor%20Adriel!%20Quero%20comprar%20o%20e-book%20de%20matem%C3%A1tica." target="_blank" rel="noopener" aria-label="Falar com o professor Adriel no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.3.6 4.53 1.74 6.5L3 29l6.68-1.75A12.9 12.9 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.6c-2 0-3.96-.54-5.67-1.56l-.4-.24-3.96 1.04 1.06-3.86-.26-.4A10.56 10.56 0 0 1 5.43 16c0-5.85 4.76-10.6 10.61-10.6 5.84 0 10.57 4.75 10.57 10.6 0 5.85-4.73 10.6-10.57 10.6Zm5.82-7.94c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.56-1.58-.95-.85-1.59-1.89-1.77-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.71-1.71-.98-2.34-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.08 1.3 3.29c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37Z"/></svg>
+</a>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(pointer: fine)').matches;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const nav = $('#nav');
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* menu */
+  const menuBtn = $('#menuBtn');
+  const setMenu = open => { nav.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open); menuBtn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); };
+  menuBtn.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+  $$('#mPanel a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+  document.addEventListener('click', e => { if (nav.classList.contains('open') && !nav.contains(e.target)) setMenu(false); });
+
+  /* inertia scroll (desktop wheel only) */
+  let sTarget = scrollY, sCur = scrollY, sRun = false;
+  const maxScroll = () => document.documentElement.scrollHeight - innerHeight;
+  const sLoop = () => {
+    sCur += (sTarget - sCur) * 0.1;
+    if (Math.abs(sTarget - sCur) < 0.5) { sCur = sTarget; sRun = false; }
+    window.scrollTo({ top: sCur, behavior: 'instant' });
+    if (sRun) requestAnimationFrame(sLoop);
+  };
+  const go = y => { sTarget = clamp(y, 0, maxScroll()); if (!sRun) { sCur = scrollY; sRun = true; requestAnimationFrame(sLoop); } };
+  if (fine && !reduce) {
+    addEventListener('wheel', e => {
+      if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      e.preventDefault();
+      if (!sRun) sTarget = scrollY;
+      go(sTarget + e.deltaY * (e.deltaMode === 1 ? 40 : 1));
+    }, { passive: false });
+    addEventListener('scroll', () => { if (!sRun) sTarget = sCur = scrollY; }, { passive: true });
+  }
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href'); const el = id.length > 1 ? $(id) : null;
+    if (!el) return;
+    e.preventDefault();
+    const y = el.getBoundingClientRect().top + scrollY - (id === '#topo' ? 0 : 0);
+    if (reduce) window.scrollTo(0, y); else if (fine) go(y); else window.scrollTo({ top: y, behavior: 'smooth' });
+    history.replaceState(null, '', id);
+  }));
+
+  /* word split */
+  const splitWords = el => {
+    let i = 0;
+    const walk = node => {
+      [...node.childNodes].forEach(n => {
+        if (n.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(part => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(' ')); return; }
+            const w = document.createElement('span'); w.className = 'w';
+            const inner = document.createElement('span'); inner.textContent = part;
+            inner.style.transitionDelay = Math.min(i++ * 0.05, 0.6) + 's';
+            w.appendChild(inner); frag.appendChild(w);
+          });
+          n.replaceWith(frag);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    };
+    walk(el);
+  };
+  $$('.split').forEach(splitWords);
+
+  /* odometer */
+  $$('.odo').forEach(el => {
+    const val = el.dataset.count; el.innerHTML = '<span class="sr">' + val + '</span>';
+    [...val].forEach(d => {
+      const reel = document.createElement('span'); reel.className = 'reel'; reel.setAttribute('aria-hidden', 'true');
+      const strip = document.createElement('span');
+      for (let k = 0; k <= 9; k++) { const s = document.createElement('span'); s.textContent = k; strip.appendChild(s); }
+      strip.dataset.d = d; reel.appendChild(strip); el.appendChild(reel);
+    });
+  });
+
+  /* reveal on view */
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    const t = en.target; t.classList.add('in');
+    if (t.classList.contains('odo')) $$('.reel>span', t).forEach(s => s.style.transform = `translateY(-${s.dataset.d * 10}%)`);
+    io.unobserve(t);
+  }), { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
+  $$('.rv,.rv-img,.split,.odo,.ring').forEach(el => io.observe(el));
+  $$('.rv').forEach(el => { const sib = [...el.parentElement.children].filter(c => c.classList.contains('rv')); const k = sib.indexOf(el); if (k > 0) el.style.transitionDelay = Math.min(k * 0.08, 0.4) + 's'; });
+
+  /* text fill */
+  const fill = $('#fill'); const fws = [];
+  (() => {
+    const walk = (node, gold) => [...node.childNodes].forEach(n => {
+      if (n.nodeType === 3) {
+        const frag = document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(p => {
+          if (!p) return; if (/^\s+$/.test(p)) { frag.appendChild(document.createTextNode(' ')); return; }
+          const s = document.createElement('span'); s.className = 'fw' + (gold ? ' g' : ''); s.textContent = p; fws.push(s); frag.appendChild(s);
+        });
+        n.replaceWith(frag);
+      } else if (n.nodeType === 1) walk(n, gold || n.hasAttribute('data-g'));
+    });
+    walk(fill, false);
+  })();
+
+  /* mouse light */
+  if (fine) $$('.card').forEach(c => c.addEventListener('pointermove', e => {
+    const r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  }));
+
+  /* magnetic elastic buttons */
+  if (fine && !reduce) $$('.magnet').forEach(b => {
+    let tx = 0, ty = 0, x = 0, y = 0, vx = 0, vy = 0, raf = 0;
+    const step = () => {
+      vx = (vx + (tx - x) * 0.18) * 0.72; vy = (vy + (ty - y) * 0.18) * 0.72; x += vx; y += vy;
+      b.style.transform = `translate(${x.toFixed(2)}px,${y.toFixed(2)}px)`;
+      if (Math.abs(tx - x) + Math.abs(ty - y) + Math.abs(vx) + Math.abs(vy) > 0.05) raf = requestAnimationFrame(step); else raf = 0;
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(step); };
+    b.addEventListener('pointermove', e => { const r = b.getBoundingClientRect(); tx = (e.clientX - r.left - r.width / 2) * 0.22; ty = (e.clientY - r.top - r.height / 2) * 0.35; kick(); });
+    b.addEventListener('pointerleave', () => { tx = ty = 0; kick(); });
+  });
+
+  /* scroll driven */
+  const bar = $('#bar'), tl = $('#timeline'), tlItems = $$('#timeline li'), cards = $$('.stack-card');
+  const hs = $('#alunos'), track = $('#track'), photo = $('#photo'), wa = $('#wa'), finalSec = $('#comprar'), heroSec = $('#hero');
+  let hsDist = 0;
+  const hsOn = () => !reduce;
+  const sizeHS = () => {
+    if (!hsOn()) { hs.style.height = ''; return; }
+    hsDist = Math.max(0, track.scrollWidth - innerWidth);
+    hs.style.height = (innerHeight + hsDist) + 'px';
+  };
+  const prog = (el, start, end) => { const r = el.getBoundingClientRect(); const vh = innerHeight; return clamp((vh * start - r.top) / (r.height + vh * (start - end)), 0, 1); };
+  let ticking = false;
+  const onScroll = () => {
+    ticking = false;
+    const vh = innerHeight, y = scrollY;
+    bar.style.transform = `scaleX(${clamp(y / maxScroll(), 0, 1)})`;
+    nav.classList.toggle('scrolled', y > 10);
+    // timeline draw
+    const tp = prog(tl, 0.85, 0.35); tl.style.setProperty('--p', tp.toFixed(3));
+    tlItems.forEach((li, i) => li.classList.toggle('on', tp >= i / (tlItems.length - 1) - 0.02 && tp > 0));
+    // stacking cards
+    cards.forEach((c, i) => {
+      const next = cards[i + 1]; if (!next) return;
+      const a = c.getBoundingClientRect(), b = next.getBoundingClientRect();
+      const p = clamp(1 - (b.top - a.top) / a.height, 0, 1);
+      c.style.setProperty('--s', (1 - p * 0.06).toFixed(4)); c.style.setProperty('--b', (1 - p * 0.35).toFixed(3));
+    });
+    // horizontal gallery
+    if (hsOn()) { const r = hs.getBoundingClientRect(); const p = clamp(-r.top / Math.max(1, r.height - vh), 0, 1); track.style.transform = `translate3d(${(-p * hsDist).toFixed(1)}px,0,0)`; }
+    // text fill with 3 word gradient zone
+    const fp = prog(fill, 0.9, 0.45); const lit = fp * (fws.length + 3);
+    fws.forEach((w, i) => { const a = clamp((lit - i) / 3, 0, 1); w.style.setProperty('--a', ((w.classList.contains('g') ? 0.5 : 0.42) + a * 0.58).toFixed(3)); });
+    // mask reveal
+    if (!reduce) { const mp = prog(photo, 1, 0.45); photo.querySelector('img').style.setProperty('--r', (14 + mp * 72).toFixed(1) + '%'); }
+    // whatsapp float hides over final cta and footer
+    const fr = finalSec.getBoundingClientRect(), hr = heroSec.getBoundingClientRect();
+    wa.classList.toggle('away', fr.top < vh - 80 || hr.bottom > vh * 0.35);
+  };
+  const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } };
+  addEventListener('scroll', req, { passive: true });
+  addEventListener('resize', () => { sizeHS(); req(); });
+  addEventListener('load', () => { sizeHS(); req(); });
+  sizeHS(); onScroll();
+})();
+</script>
+
+<script type="module">
+// The 3D scene is heavy, so it only starts after the page is on screen:
+// on the first interaction, or once the browser is idle after load.
+await new Promise(res => {
+  let done = false;
+  const go = () => { if (done) return; done = true; evs.forEach(e => removeEventListener(e, go)); res(); };
+  const evs = ["pointermove", "pointerdown", "touchstart", "scroll", "keydown"];
+  evs.forEach(e => addEventListener(e, go, { passive: true }));
+  const idle = () => setTimeout(() => ("requestIdleCallback" in window ? requestIdleCallback(go, { timeout: 2000 }) : go()), 2500);
+  if (document.readyState === "complete") idle(); else addEventListener("load", idle, { once: true });
+});
+const [THREE, { GLTFLoader }, { EffectComposer }, { RenderPass }, { UnrealBloomPass }, { OutputPass }, { mergeVertices }] = await Promise.all([
+  import("three"),
+  import("three/addons/loaders/GLTFLoader.js"),
+  import("three/addons/postprocessing/EffectComposer.js"),
+  import("three/addons/postprocessing/RenderPass.js"),
+  import("three/addons/postprocessing/UnrealBloomPass.js"),
+  import("three/addons/postprocessing/OutputPass.js"),
+  import("three/addons/utils/BufferGeometryUtils.js")
+]);
+
+const HEAD_GLB = "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261018_172206_0181329a-86e2-41c9-8ab8-c496f29aaa53.glb";
+const ARM_GLB = "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261018_172137_cd6086ec-07ef-44dc-bd15-95a450ddaa8c.glb";
+
+const NAVY = 0x0b132b, GOLD = 0xffb703;
+const hero = document.getElementById("hero");
+const canvas = document.getElementById("stage");
+const loaderEl = document.getElementById("loader");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+// phones and data saver get the light robot: no 9 MB model, no bloom, 30 fps
+const lite = matchMedia("(max-width: 860px)").matches || !!(navigator.connection && navigator.connection.saveData) || (navigator.hardwareConcurrency || 8) <= 2;
+loaderEl.classList.remove("hide");
+
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
+renderer.setPixelRatio(Math.min(devicePixelRatio, lite ? 1.5 : 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(NAVY);
+const camera = new THREE.PerspectiveCamera(28, 1, 0.1, 100);
+
+function radialTexture(stops, size = 256) {
+  const c = document.createElement("canvas"); c.width = c.height = size;
+  const g = c.getContext("2d"); const gr = g.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+  stops.forEach(([o, col]) => gr.addColorStop(o, col));
+  g.fillStyle = gr; g.fillRect(0, 0, size, size);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+const glowTex = radialTexture([[0, "rgba(255,214,120,1)"], [0.25, "rgba(255,183,3,.55)"], [0.6, "rgba(230,140,0,.12)"], [1, "rgba(200,110,0,0)"]]);
+
+/* dark studio environment with round softboxes */
+const envScene = new THREE.Scene();
+envScene.background = new THREE.Color(0x030509);
+const sb = (color, w, h, pos, k) => {
+  const m = new THREE.Mesh(new THREE.SphereGeometry(0.5, 32, 16), new THREE.MeshBasicMaterial({ color: new THREE.Color(color).multiplyScalar(k) }));
+  m.scale.set(w, h, 0.3); m.position.set(...pos); m.lookAt(0, 0, 0); envScene.add(m);
+};
+sb(0xffffff, 5, 3.2, [-3, 4.5, 4], 3.2);
+sb(0xffffff, 1.2, 6, [6, 0.5, 2], 1.1);
+sb(0xffffff, 3, 1, [1.5, 5, -1], 0.8);
+sb(GOLD, 4, 5, [-5, 0, -4], 0.75);
+sb(0x2b4a9c, 4, 5, [5, 0, -4], 1.0);
+sb(GOLD, 6, 3, [0, -5, 1], 0.3);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(envScene, 0.02).texture;
+scene.environmentIntensity = 1.0;
+
+scene.add(new THREE.HemisphereLight(0xe6ecf5, 0x0b132b, 2.3));
+const dir = new THREE.DirectionalLight(0xffffff, 0.55); dir.position.set(-3, 4, 5); scene.add(dir);
+
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.55, 0.4, 0.92);
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+
+function rimMaterial(color, power, strength) {
+  return new THREE.ShaderMaterial({
+    uniforms: { color: { value: new THREE.Color(color) }, power: { value: power }, strength: { value: strength } },
+    vertexShader: `varying vec3 vN; varying vec3 vV;
+      void main(){ vec4 mv = modelViewMatrix * vec4(position,1.0); vN = normalize(normalMatrix * normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`,
+    fragmentShader: `uniform vec3 color; uniform float power; uniform float strength; varying vec3 vN; varying vec3 vV;
+      void main(){ float f = pow(1.0 - max(dot(normalize(vN), normalize(vV)), 0.0), power); gl_FragColor = vec4(color * f * strength, f); }`,
+    blending: THREE.AdditiveBlending, transparent: true, depthWrite: false
+  });
+}
+const addRim = (mesh, rim) => { const s = new THREE.Mesh(mesh.geometry, rimMaterial(rim.color, rim.power, rim.strength)); s.renderOrder = 2; mesh.add(s); };
+
+/* rig */
+const robot = new THREE.Group(), body = new THREE.Group(), head = new THREE.Group();
+robot.add(body); body.add(head); scene.add(robot);
+robot.scale.setScalar(0.001);
+
+const haze = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xffb703, opacity: 0.06, blending: THREE.AdditiveBlending, toneMapped: false, depthWrite: false, transparent: true }));
+haze.scale.setScalar(7.5); haze.position.set(0, 0.1, -3); scene.add(haze);
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ map: glowTex, color: 0xffb703, opacity: 0.9, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
+floor.position.set(0, -2.05, -0.6); floor.scale.set(3.4, 0.42, 1); scene.add(floor);
+
+function prepareModel(root, { glossy, rim, tint, useMap, smooth }) {
+  const meshes = []; root.traverse(o => { if (o.isMesh) meshes.push(o); });
+  meshes.forEach(m => {
+    if (smooth) {
+      let g = m.geometry.clone();
+      ["normal", "uv", "uv1", "tangent", "color"].forEach(a => g.deleteAttribute(a));
+      g = mergeVertices(g, 1e-3); g.computeVertexNormals(); m.geometry = g;
+    }
+    const old = m.material;
+    m.material = new THREE.MeshPhysicalMaterial(Object.assign({
+      color: new THREE.Color(tint), map: useMap && old && old.map ? old.map : null
+    }, glossy
+      ? { metalness: 0.1, roughness: 0.3, clearcoat: 1.0, clearcoatRoughness: 0.16, envMapIntensity: 0.9 }
+      : { metalness: 0, roughness: 0.48, clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.55 }));
+    if (rim) addRim(m, rim);
+  });
+  return meshes;
+}
+
+function normaliseHead(root) {
+  let box = new THREE.Box3().setFromObject(root); const size = box.getSize(new THREE.Vector3());
+  root.scale.multiplyScalar(2 / size.z); root.updateMatrixWorld(true);
+  box = new THREE.Box3().setFromObject(root); const c = box.getCenter(new THREE.Vector3());
+  root.position.set(-c.x, -(box.min.y + 1), -c.z); root.updateMatrixWorld(true);
+}
+function normaliseArm(root) {
+  let box = new THREE.Box3().setFromObject(root); const size = box.getSize(new THREE.Vector3());
+  root.scale.multiplyScalar(0.78 / size.y); root.updateMatrixWorld(true);
+  box = new THREE.Box3().setFromObject(root); const c = box.getCenter(new THREE.Vector3());
+  root.position.sub(c); const g = new THREE.Group(); g.add(root); return g;
+}
+
+function sphereNormals(meshes, R) {
+  head.updateMatrixWorld(true);
+  const inv = new THREE.Matrix4().copy(head.matrixWorld).invert();
+  const p = new THREE.Vector3(), n = new THREE.Vector3();
+  meshes.forEach(m => {
+    const pos = m.geometry.attributes.position, nor = m.geometry.attributes.normal; if (!nor) return;
+    const M = new THREE.Matrix4().multiplyMatrices(inv, m.matrixWorld);
+    const back = new THREE.Matrix3().setFromMatrix4(M).transpose();
+    for (let i = 0; i < pos.count; i++) {
+      p.fromBufferAttribute(pos, i).applyMatrix4(M);
+      if (Math.abs(p.length() - R) < R * 0.07) { n.copy(p).normalize().applyMatrix3(back).normalize(); nor.setXYZ(i, n.x, n.y, n.z); }
+    }
+    nor.needsUpdate = true;
+  });
+}
+
+function roundedRect(w, h, r, cy) {
+  const s = new THREE.Shape(), x = -w / 2, y = cy - h / 2;
+  s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r);
+  s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r);
+  s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y); return s;
+}
+function subdivide(g) {
+  const a = g.attributes.position.array, out = [];
+  for (let i = 0; i < a.length; i += 9) {
+    const A = [a[i], a[i + 1], a[i + 2]], B = [a[i + 3], a[i + 4], a[i + 5]], C = [a[i + 6], a[i + 7], a[i + 8]];
+    const mid = (p, q) => [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2, (p[2] + q[2]) / 2];
+    const ab = mid(A, B), bc = mid(B, C), ca = mid(C, A);
+    out.push(...A, ...ab, ...ca, ...ab, ...B, ...bc, ...ca, ...bc, ...C, ...ab, ...bc, ...ca);
+  }
+  const ng = new THREE.BufferGeometry(); ng.setAttribute("position", new THREE.Float32BufferAttribute(out, 3)); return ng;
+}
+function visorGeo(w, h, r, cy, radius) {
+  let g = new THREE.ShapeGeometry(roundedRect(w, h, r, cy), 48).toNonIndexed();
+  for (let k = 0; k < 3; k++) g = subdivide(g);
+  const pos = g.attributes.position, nrm = new Float32Array(pos.count * 3), v = new THREE.Vector3();
+  for (let i = 0; i < pos.count; i++) {
+    const x = pos.getX(i), y = pos.getY(i); const z = Math.sqrt(Math.max(radius * radius - x * x - y * y, 0));
+    pos.setXYZ(i, x, y, z); v.set(x, y, z).normalize(); nrm.set([v.x, v.y, v.z], i * 3);
+  }
+  g.setAttribute("normal", new THREE.BufferAttribute(nrm, 3)); return g;
+}
+function addVisor(R) {
+  const bezel = new THREE.Mesh(visorGeo(1.86, 1.12, 0.46, -0.07, R * 1.03), new THREE.MeshPhysicalMaterial({ color: 0x070c1c, roughness: 0.3, metalness: 0.3, clearcoat: 0.8, polygonOffset: true, polygonOffsetFactor: -6, polygonOffsetUnits: -6 }));
+  bezel.renderOrder = 3; head.add(bezel);
+  const glass = new THREE.Mesh(visorGeo(1.74, 1.0, 0.4, -0.07, R * 1.036), new THREE.MeshPhysicalMaterial({ color: 0x000000, roughness: 0.12, clearcoat: 1, clearcoatRoughness: 0.1, envMapIntensity: 0.9, polygonOffset: true, polygonOffsetFactor: -8, polygonOffsetUnits: -8 }));
+  glass.renderOrder = 4; head.add(glass);
+}
+
+const eyes = [], pupils = [];
+function eyeMat(opts) { return new THREE.MeshBasicMaterial(Object.assign({ toneMapped: false, depthWrite: false, depthTest: false, transparent: true }, opts)); }
+function addEyes(R) {
+  const irisTex = radialTexture([[0, "#fff1c2"], [0.45, "#ffd166"], [0.8, "#ffb703"], [1, "#e08e00"]]);
+  [-0.43, 0.43].forEach(x => {
+    const y = -0.08, rr = R * 1.055, z = Math.sqrt(rr * rr - x * x - y * y);
+    const g = new THREE.Group(); g.position.set(x, y, z);
+    g.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), g.position.clone().normalize());
+    const add = (geo, mat, zz = 0) => { const m = new THREE.Mesh(geo, mat); m.position.z = zz; m.renderOrder = 10; return m; };
+    const halo = add(new THREE.CircleGeometry(0.42, 48), eyeMat({ map: glowTex, color: 0xffb703, opacity: 0.24, blending: THREE.AdditiveBlending }), -0.004); halo.renderOrder = 9; g.add(halo);
+    g.add(add(new THREE.RingGeometry(0.168, 0.212, 64), eyeMat({ color: new THREE.Color(2.0, 1.45, 0.3) })));
+    g.add(add(new THREE.CircleGeometry(0.17, 48), eyeMat({ map: irisTex, color: new THREE.Color(1.05, 1.0, 0.95) }), 0.001));
+    const pw = new THREE.Group();
+    pw.add(add(new THREE.CircleGeometry(0.083, 32), eyeMat({ color: NAVY }), 0.003));
+    const gl = add(new THREE.CircleGeometry(0.022, 16), eyeMat({ color: 0xffffff }), 0.005); gl.position.x = 0.032; gl.position.y = 0.034; pw.add(gl);
+    pw.renderOrder = 10; g.add(pw);
+    head.add(g); eyes.push(g); pupils.push(pw);
+  });
+}
+
+const antennaGlows = [];
+function addAntennaBall(pos) {
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(0.118, 32, 16), new THREE.MeshPhysicalMaterial({ color: 0xffb703, emissive: 0xff9f00, emissiveIntensity: 1.4, roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.14 }));
+  ball.position.copy(pos); head.add(ball);
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xffc233, opacity: 0.85, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
+  glow.scale.setScalar(0.5); glow.position.copy(pos); head.add(glow); antennaGlows.push(glow);
+}
+function findAntennas(meshes) {
+  head.updateMatrixWorld(true);
+  const inv = new THREE.Matrix4().copy(head.matrixWorld).invert(); const sides = { l: [], r: [] }; const p = new THREE.Vector3();
+  meshes.forEach(m => {
+    const M = new THREE.Matrix4().multiplyMatrices(inv, m.matrixWorld); const pos = m.geometry.attributes.position;
+    for (let i = 0; i < pos.count; i += 1) { p.fromBufferAttribute(pos, i).applyMatrix4(M); if (p.y > 0.75 && Math.abs(p.x) > 0.15) (p.x < 0 ? sides.l : sides.r).push(p.clone()); }
+  });
+  Object.values(sides).forEach(list => {
+    if (!list.length) return;
+    const top = list.reduce((a, b) => (b.y > a.y ? b : a));
+    const near = list.filter(v => v.distanceTo(top) < 0.2); const c = new THREE.Vector3();
+    near.forEach(v => c.add(v)); c.divideScalar(near.length); c.y = Math.max(c.y, top.y - 0.1); addAntennaBall(c);
+  });
+}
+
+function mountHead(model, isFallback) {
+  head.add(model);
+  head.updateMatrixWorld(true);
+  const meshes = []; model.traverse(o => { if (o.isMesh && !(o.material && o.material.isShaderMaterial)) meshes.push(o); });
+  const rc = new THREE.Raycaster(new THREE.Vector3(0, 0, 5), new THREE.Vector3(0, 0, -1));
+  const hit = rc.intersectObjects(meshes, false)[0];
+  const R = clamp(hit ? hit.point.length() : 1, 0.85, 1.1);
+  if (!isFallback) { sphereNormals(meshes, R); findAntennas(meshes); }
+  addVisor(R); addEyes(R);
+}
+
+function fallbackHead() {
+  const g = new THREE.Group(); const rim = { color: 0xffc94d, power: 4.5, strength: 0.28 };
+  const mat = () => new THREE.MeshPhysicalMaterial({ color: 0x3b4560, roughness: 0.26, clearcoat: 1, clearcoatRoughness: 0.16, metalness: 0.1 });
+  const sph = new THREE.Mesh(new THREE.SphereGeometry(1, 96, 64), mat()); addRim(sph, rim); g.add(sph);
+  [-1, 1].forEach(s => {
+    const ear = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.16, 48), mat()); ear.rotation.z = Math.PI / 2; ear.position.x = s * 1.0; addRim(ear, rim); g.add(ear);
+    const rod = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.5, 16), mat()); rod.position.set(s * 0.42, 1.08, 0); rod.rotation.z = -s * 0.35; g.add(rod);
+  });
+  addAntennaBall(new THREE.Vector3(-0.52, 1.32, 0)); addAntennaBall(new THREE.Vector3(0.52, 1.32, 0));
+  return g;
+}
+function fallbackArm() {
+  const m = new THREE.Mesh(new THREE.CapsuleGeometry(0.22, 0.42, 12, 32), new THREE.MeshPhysicalMaterial({ color: 0x1a2238, roughness: 0.48, clearcoat: 0.3 }));
+  addRim(m, { color: 0xffc94d, power: 2.6, strength: 0.9 }); const g = new THREE.Group(); g.add(m); return g;
+}
+
+const arms = [];
+const restPoses = [{ x: -1.32, y: -0.72, z: 0.15, rz: -0.62, phase: 0 }, { x: 1.32, y: -0.72, z: 0.15, rz: 0.62, phase: Math.PI * 0.85 }];
+function mountArms(list) {
+  list.forEach((a, i) => { const r = restPoses[i]; a.position.set(r.x, r.y, r.z); a.rotation.z = r.rz; a.userData = r; body.add(a); arms.push(a); });
+}
+
+/* layout */
+const anchor = { x: 0, y: 0 }; let W = 1, H = 1, isMobile = false;
+function layout() {
+  W = hero.clientWidth; H = hero.clientHeight; isMobile = W <= 860;
+  renderer.setSize(W, H, false); composer.setSize(W, H); bloom.resolution.set(W, H);
+  const navH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--nav-h")) || 62;
+  let robotPx;
+  // the robot sits beside the professor's photo, in the free space to its right
+  const hr = hero.getBoundingClientRect(), pr = document.getElementById("prof").getBoundingClientRect();
+  const pRight = pr.right - hr.left, pTop = pr.top - hr.top, free = Math.max(W - pRight, 0);
+  if (!isMobile) {
+    robotPx = Math.max(150, Math.min(free * 0.95, H * 0.34, 300));
+    anchor.x = Math.min(pRight + Math.max(free, robotPx) / 2, W - robotPx * 0.5); anchor.y = Math.max(pTop + pr.height * 0.28, navH + robotPx * 0.6);
+  } else {
+    robotPx = Math.max(96, Math.min(free * 0.95, pr.height * 0.5, 170));
+    anchor.x = Math.min(pRight + Math.max(free, robotPx) / 2, W - robotPx * 0.56); anchor.y = pTop + pr.height * 0.3;
+  }
+  camera.aspect = W / H;
+  camera.position.set(0, 0, (3.4 * H) / (robotPx * 2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))));
+  camera.setViewOffset(W, H, W / 2 - anchor.x, H / 2 - anchor.y, W, H); camera.updateProjectionMatrix();
+  loaderEl.style.left = anchor.x + "px"; loaderEl.style.top = anchor.y + "px";
+}
+new ResizeObserver(layout).observe(hero); layout();
+
+/* pointer */
+const target = { x: 0, y: 0 }, look = { x: 0, y: 0 }; let lastMove = -10;
+const piEl = document.getElementById("pi"); const finePtr = matchMedia("(pointer: fine)").matches;
+const mouse = { x: 0, y: 0, inHero: false, onLink: false }; const piPos = { x: -100, y: -100, init: false };
+if (finePtr) {
+  hero.addEventListener("pointermove", e => { const r = hero.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.inHero = true; mouse.onLink = !!e.target.closest("a,button"); hero.classList.add("pi-mode"); });
+  hero.addEventListener("pointerleave", () => { mouse.inHero = false; });
+}
+const onPoint = (x, y) => {
+  const r = hero.getBoundingClientRect();
+  if (x < r.left || x > r.right || y < r.top || y > r.bottom) return; lastMove = performance.now() / 1000;
+};
+addEventListener("pointermove", e => onPoint(e.clientX, e.clientY), { passive: true });
+addEventListener("pointerdown", e => onPoint(e.clientX, e.clientY), { passive: true });
+addEventListener("touchmove", e => { const t = e.touches[0]; if (t) onPoint(t.clientX, t.clientY); }, { passive: true });
+
+/* load */
+const loader = new GLTFLoader();
+const load = url => new Promise((res, rej) => loader.load(url, g => res(g.scene), undefined, rej));
+const [hRes, aRes] = lite ? [{ status: "skipped" }, { status: "skipped" }] : await Promise.allSettled([load(HEAD_GLB), load(ARM_GLB)]);
+if (hRes.status === "fulfilled") {
+  const m = hRes.value; normaliseHead(m);
+  prepareModel(m, { glossy: true, useMap: false, tint: "#3b4560", rim: { color: 0xffc94d, power: 4.5, strength: 0.32 } });
+  mountHead(m, false);
+} else mountHead(fallbackHead(), true);
+if (aRes.status === "fulfilled") {
+  const tpl = aRes.value; const copies = [tpl, tpl.clone(true)];
+  mountArms(copies.map(c => { prepareModel(c, { glossy: false, useMap: false, smooth: true, tint: "#1a2238", rim: { color: 0xffc94d, power: 2.6, strength: 1.05 } }); return normaliseArm(c); }));
+} else mountArms([fallbackArm(), fallbackArm()]);
+loaderEl.classList.add("hide");
+
+/* loop */
+const m = reduce ? 0.25 : 1; let intro = 0, last = performance.now() / 1000, visible = true;
+let nextBlink = 2.5 + Math.random() * 3.5, blinkT = -1;
+new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) { last = performance.now() / 1000; requestAnimationFrame(tick); } }).observe(hero);
+let lastFrame = 0;
+function tick() {
+  if (!visible) return;
+  const now = performance.now() / 1000;
+  if (lite && now - lastFrame < 1 / 31) { requestAnimationFrame(tick); return; }
+  lastFrame = now;
+  const t = now; const dt = Math.min(t - last, 0.05); last = t;
+  // the robot keeps its eyes on a golden pi: the mouse on desktop, a floating pi otherwise
+  const rx = isMobile ? W * 0.5 : Math.max(W * 0.55, 500), ry = isMobile ? H * 0.5 : Math.max(H * 0.55, 400);
+  const following = finePtr && mouse.inHero && t - lastMove < 3.5;
+  let px, py;
+  if (following) { px = mouse.x; py = mouse.y; }
+  else {
+    const span = isMobile ? Math.min(W * 0.3, 110) : Math.min(W * 0.12, 200);
+    px = anchor.x + Math.sin(t * 0.45 * m) * span; py = anchor.y - span * 0.15 + Math.sin(t * 0.7 * m + 1.2) * span * 0.55;
+  }
+  if (!piPos.init) { piPos.x = px; piPos.y = py; piPos.init = true; }
+  const kp = following ? 1 - Math.pow(0.0001, dt) : 1; piPos.x += (px - piPos.x) * kp; piPos.y += (py - piPos.y) * kp;
+  piEl.style.transform = `translate3d(${(piPos.x - 12).toFixed(1)}px,${(piPos.y - 20).toFixed(1)}px,0)`;
+  piEl.classList.toggle("on", intro > 0.6 && !(following && mouse.onLink));
+  target.x = clamp((piPos.x - anchor.x) / rx, -1.2, 1.2); target.y = clamp((piPos.y - anchor.y) / ry, -1.2, 1.2);
+  const k1 = 1 - Math.pow(0.0025, dt); look.x += (target.x - look.x) * k1; look.y += (target.y - look.y) * k1;
+  intro = Math.min(1, intro + dt * 1.4); const k = intro; robot.scale.setScalar(Math.max(0.001, 1 + 2.4 * (k - 1) ** 3 + 1.4 * (k - 1) ** 2));
+  const bob = Math.sin(t * 1.6) * 0.09 * m; robot.position.y = bob;
+  head.rotation.set(look.y * 0.42, look.x * 0.5, -look.x * 0.06 + Math.sin(t * 1.1) * 0.015 * m);
+  body.rotation.y = look.x * 0.28; body.rotation.x = look.y * 0.12;
+  arms.forEach(a => {
+    const r = a.userData, s = Math.sign(r.x), w = Math.sin(t * 2.0 + r.phase);
+    a.position.y = r.y + w * 0.13 * m - bob * 0.35; a.position.x = r.x + s * look.x * -0.04;
+    a.rotation.z = r.rz + w * 0.12 * s * m; a.rotation.x = Math.sin(t * 1.3 + r.phase) * 0.08 * m;
+  });
+  pupils.forEach(p => p.position.set(clamp(look.x * 0.075, -0.07, 0.07), clamp(-look.y * 0.06, -0.06, 0.06), 0));
+  if (blinkT < 0 && t > nextBlink) blinkT = 0;
+  if (blinkT >= 0) { blinkT += dt; const p = blinkT / 0.32; const sy = p < 0.5 ? 1 - p * 2 * 0.92 : 0.08 + (p - 0.5) * 2 * 0.92; eyes.forEach(e => e.scale.y = clamp(sy, 0.08, 1)); if (p >= 1) { blinkT = -1; eyes.forEach(e => e.scale.y = 1); nextBlink = t + 2.5 + Math.random() * 3.5; } }
+  floor.scale.set(3.4 - bob * 3, 0.42 - bob * 0.4, 1); floor.material.opacity = 0.7 + (0.09 - bob) * 1.5;
+  antennaGlows.forEach(g => g.material.opacity = 0.7 * (0.85 + Math.sin(t * 1.6) * 0.15) + 0.15);
+  if (lite) renderer.render(scene, camera); else composer.render();
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+</script>
 </body>
 </html>
