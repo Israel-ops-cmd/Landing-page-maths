@@ -109,11 +109,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(255,255,255,.014) 0 1px,transparent 1px 7px),radial-gradient(120% 80% at 50% 0%,transparent 55%,rgba(0,0,0,.4) 100%)}
 .hero-inner{position:relative;z-index:2;pointer-events:none;max-width:var(--max);margin:0 auto;min-height:inherit;padding:calc(var(--nav-h) + 40px) var(--pad) 80px;display:flex;flex-direction:column;justify-content:center}
 .copy{max-width:min(580px,44vw);pointer-events:auto}
-.prof{position:absolute;z-index:-1;top:calc(var(--nav-h) + 24px);left:calc(var(--pad) + min(580px,44vw) + 2vw);height:min(calc(100vh - var(--nav-h) - 30px),calc(32vw * 1.31),600px);height:min(calc(100svh - var(--nav-h) - 30px),calc(32vw * 1.31),600px);pointer-events:none}
-.prof::before{content:"";position:absolute;left:-10%;right:-10%;bottom:0;height:78%;border-radius:50% 50% 0 0;background:radial-gradient(60% 70% at 50% 100%,rgba(255,183,3,.34),rgba(255,183,3,.08) 55%,transparent 75%)}
-.prof img{position:relative;height:100%;width:auto;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent);opacity:0;transform:translateY(40px);animation:rise 1.2s var(--ease) .25s forwards}
-.prof-tag{position:absolute;z-index:2;left:-8%;bottom:20%;background:var(--white);color:var(--navy);border-radius:16px;padding:12px 16px;font-weight:900;font-size:15px;line-height:1.2;box-shadow:0 18px 40px rgba(0,0,0,.35);opacity:0;animation:rise .9s var(--ease) .9s forwards}
-.prof-tag small{display:block;font-weight:700;font-size:13px;color:var(--navy-70)}
+.prof{position:absolute;z-index:-1;top:calc(var(--nav-h) + 24px);left:calc(var(--pad) + min(580px,44vw) + 2vw);height:min(calc(100vh - var(--nav-h) - 30px),calc(32vw * 1.22),600px);height:min(calc(100svh - var(--nav-h) - 30px),calc(32vw * 1.22),600px);pointer-events:none}
+.prof-light{position:absolute;z-index:-1;left:-45%;right:-45%;top:-4%;height:92%;background:radial-gradient(closest-side,rgba(255,183,3,.30),rgba(255,183,3,.13) 42%,rgba(255,183,3,.04) 70%,transparent 100%);opacity:0;transform:scale(.8);animation:lampOn 1.6s var(--ease) .7s forwards}
+.prof-light::after{content:"";position:absolute;left:8%;top:18%;width:46%;height:60%;background:radial-gradient(closest-side,rgba(244,247,250,.07),transparent)}
+.prof img{position:relative;height:100%;width:auto;-webkit-mask-image:linear-gradient(#000 60%,transparent 92%);mask-image:linear-gradient(#000 60%,transparent 92%);opacity:0;transform:translateY(30px);filter:brightness(.12) drop-shadow(0 0 0 rgba(255,183,3,0));animation:rise 1.2s var(--ease) .2s forwards,lightUp 1.8s var(--ease) .6s forwards}
+@keyframes lampOn{to{opacity:1;transform:none}}
+@keyframes lightUp{to{filter:brightness(1.04) drop-shadow(0 0 1px rgba(255,200,90,.45)) drop-shadow(8px -6px 20px rgba(255,183,3,.22))}}
 .hero h1{font-size:clamp(40px,5.1vw,72px);line-height:1.02;font-weight:900;letter-spacing:-.035em}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .hero .sub{margin-top:26px;color:var(--soft-80);font-size:clamp(17px,1.5vw,20px);line-height:1.6;max-width:530px}
@@ -315,7 +316,6 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
   .hero-inner{justify-content:flex-end;text-align:center;align-items:center;padding:calc(var(--nav-h) + min(44vh,340px)) 24px 48px}
   .copy{max-width:560px}
   .prof{left:4%;top:calc(var(--nav-h) + 6px);bottom:auto;width:auto;height:calc(min(44vh,340px) - 6px)}
-  .prof-tag{left:auto;right:-30%;bottom:16%;font-size:13px;padding:9px 12px}
   .hero h1{font-size:clamp(32px,8.6vw,52px)}
   .hero .sub{margin:14px auto 0;font-size:16px}
   .cta-row{justify-content:center;margin-top:24px}
@@ -378,6 +378,8 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
 }
 @media (max-height:620px){ .quote:nth-child(2n){transform:none} .hs-note{display:none} }
 @media (prefers-reduced-motion:reduce){
+  .prof img{animation:none;opacity:1;transform:none;filter:drop-shadow(0 0 1px rgba(255,200,90,.45)) drop-shadow(8px -6px 20px rgba(255,183,3,.22))}
+  .prof-light{animation:none;opacity:1;transform:none}
   .reveal{animation:none;opacity:1;transform:none}
   .rv,.rv-img,.split .w>span{opacity:1!important;transform:none!important;transition:none!important}
   .photo img{clip-path:none}
@@ -422,8 +424,8 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
   <div class="pi" id="pi" aria-hidden="true">π</div>
   <div class="hero-inner">
     <div class="prof" id="prof">
-      <img src="img/adriel-lucas.webp" width="581" height="760" fetchpriority="high" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
-      <div class="prof-tag">Prof. Adriel Lucas<small>UFRN, 4 anos de sala de aula</small></div>
+      <div class="prof-light" aria-hidden="true"></div>
+      <img src="img/adriel-lucas.webp" width="640" height="782" fetchpriority="high" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
     </div>
     <div class="copy">
       <h1 class="reveal d1">Perca o medo da prova de matemática em <em>40 páginas</em></h1>
@@ -526,7 +528,7 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
     <div class="about">
       <div class="photo" id="photo">
         <div class="badge">4 anos<small>dando aula</small></div>
-        <img src="img/adriel-lucas.webp" width="581" height="760" loading="lazy" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
+        <img src="img/adriel-lucas.webp" width="640" height="782" loading="lazy" decoding="async" alt="Professor Adriel Lucas sorrindo, de camiseta azul marinho e braços cruzados" />
       </div>
       <div>
         <h2 class="h2 split" id="t-sobre">Prazer, sou o Adriel. Ensino matemática para quem <em>acha que não nasceu pra ela</em></h2>
