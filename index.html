@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <script type="importmap">
 { "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js",
   "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
 } }
 </script>
@@ -57,6 +57,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .nw{white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:-999px;top:8px;z-index:99;background:var(--gold);color:var(--navy);padding:12px 18px;border-radius:999px;font-weight:700}
 .skip:focus{left:16px}
 
@@ -238,8 +239,8 @@ section{position:relative}
 .about p{color:var(--soft-60);font-size:18px;margin-top:22px;max-width:56ch}
 .about p strong{color:var(--white);font-weight:700}
 .fill{margin-top:110px;font-size:clamp(28px,3.8vw,56px);font-weight:900;line-height:1.15;letter-spacing:-.03em;max-width:24ch}
-.fill .fw{color:rgba(244,247,250,var(--a,.16));transition:color .15s linear}
-.fill .fw.g{color:rgba(255,183,3,var(--a,.16))}
+.fill .fw{color:rgba(244,247,250,var(--a,.42));transition:color .15s linear}
+.fill .fw.g{color:rgba(255,183,3,var(--a,.5))}
 
 /* ATENDIMENTO */
 .info{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
@@ -395,7 +396,7 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="#topo" aria-label="Professor Adriel Lucas, início"><span class="brand-orb" aria-hidden="true">x²</span>Adriel Lucas <small>Matemática</small></a>
+    <a class="brand" href="#topo"><span class="brand-orb" aria-hidden="true">x²</span>Adriel Lucas <small>Matemática</small></a>
     <div class="nav-right">
       <nav class="nav-links" aria-label="Seções">
         <a href="#ebook">O que tem no e-book</a>
@@ -420,7 +421,7 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
 <main id="topo">
 <section class="hero" id="hero" aria-label="Apresentação">
   <canvas id="stage" aria-hidden="true"></canvas>
-  <div class="loader" id="loader" aria-hidden="true"></div>
+  <div class="loader hide" id="loader" aria-hidden="true"></div>
   <div class="pi" id="pi" aria-hidden="true">π</div>
   <div class="hero-inner">
     <div class="prof" id="prof">
@@ -500,9 +501,9 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
       <article class="stack-card" style="--i:3"><div class="num">04</div><div><h3>Travou? Fala comigo</h3><p>Quem compra tem suporte direto comigo pelo WhatsApp. Sem robô e sem fila.</p></div></article>
     </div>
     <div class="stats">
-      <div class="stat"><div class="odo" data-count="40" aria-label="40">40</div><span class="l">páginas direto ao ponto</span></div>
-      <div class="stat"><div class="odo" data-count="5" aria-label="5">5</div><span class="l">temas da base</span></div>
-      <div class="stat"><div class="odo" data-count="7" aria-label="7">7</div><span class="l">dias de garantia</span></div>
+      <div class="stat"><div class="odo" data-count="40">40</div><span class="l">páginas direto ao ponto</span></div>
+      <div class="stat"><div class="odo" data-count="5">5</div><span class="l">temas da base</span></div>
+      <div class="stat"><div class="odo" data-count="7">7</div><span class="l">dias de garantia</span></div>
     </div>
   </div>
 </section>
@@ -691,7 +692,7 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
 
   /* odometer */
   $$('.odo').forEach(el => {
-    const val = el.dataset.count; el.textContent = '';
+    const val = el.dataset.count; el.innerHTML = '<span class="sr">' + val + '</span>';
     [...val].forEach(d => {
       const reel = document.createElement('span'); reel.className = 'reel'; reel.setAttribute('aria-hidden', 'true');
       const strip = document.createElement('span');
@@ -775,7 +776,7 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
     if (hsOn()) { const r = hs.getBoundingClientRect(); const p = clamp(-r.top / Math.max(1, r.height - vh), 0, 1); track.style.transform = `translate3d(${(-p * hsDist).toFixed(1)}px,0,0)`; }
     // text fill with 3 word gradient zone
     const fp = prog(fill, 0.9, 0.45); const lit = fp * (fws.length + 3);
-    fws.forEach((w, i) => { const a = clamp((lit - i) / 3, 0, 1); w.style.setProperty('--a', (0.16 + a * 0.84).toFixed(3)); });
+    fws.forEach((w, i) => { const a = clamp((lit - i) / 3, 0, 1); w.style.setProperty('--a', ((w.classList.contains('g') ? 0.5 : 0.42) + a * 0.58).toFixed(3)); });
     // mask reveal
     if (!reduce) { const mp = prog(photo, 1, 0.45); photo.querySelector('img').style.setProperty('--r', (14 + mp * 72).toFixed(1) + '%'); }
     // whatsapp float hides over final cta and footer
@@ -791,13 +792,25 @@ footer{background:var(--navy);color:var(--soft-60);padding:70px 0 110px;font-siz
 </script>
 
 <script type="module">
-import * as THREE from "three";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
-import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
-import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
-import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
-import { mergeVertices } from "three/addons/utils/BufferGeometryUtils.js";
+// The 3D scene is heavy, so it only starts after the page is on screen:
+// on the first interaction, or once the browser is idle after load.
+await new Promise(res => {
+  let done = false;
+  const go = () => { if (done) return; done = true; evs.forEach(e => removeEventListener(e, go)); res(); };
+  const evs = ["pointermove", "pointerdown", "touchstart", "scroll", "keydown"];
+  evs.forEach(e => addEventListener(e, go, { passive: true }));
+  const idle = () => setTimeout(() => ("requestIdleCallback" in window ? requestIdleCallback(go, { timeout: 2000 }) : go()), 2500);
+  if (document.readyState === "complete") idle(); else addEventListener("load", idle, { once: true });
+});
+const [THREE, { GLTFLoader }, { EffectComposer }, { RenderPass }, { UnrealBloomPass }, { OutputPass }, { mergeVertices }] = await Promise.all([
+  import("three"),
+  import("three/addons/loaders/GLTFLoader.js"),
+  import("three/addons/postprocessing/EffectComposer.js"),
+  import("three/addons/postprocessing/RenderPass.js"),
+  import("three/addons/postprocessing/UnrealBloomPass.js"),
+  import("three/addons/postprocessing/OutputPass.js"),
+  import("three/addons/utils/BufferGeometryUtils.js")
+]);
 
 const HEAD_GLB = "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261018_172206_0181329a-86e2-41c9-8ab8-c496f29aaa53.glb";
 const ARM_GLB = "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261018_172137_cd6086ec-07ef-44dc-bd15-95a450ddaa8c.glb";
@@ -808,9 +821,12 @@ const canvas = document.getElementById("stage");
 const loaderEl = document.getElementById("loader");
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+// phones and data saver get the light robot: no 9 MB model, no bloom, 30 fps
+const lite = matchMedia("(max-width: 860px)").matches || !!(navigator.connection && navigator.connection.saveData) || (navigator.hardwareConcurrency || 8) <= 2;
+loaderEl.classList.remove("hide");
 
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setPixelRatio(Math.min(devicePixelRatio, lite ? 1.5 : 2));
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.0;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -1076,7 +1092,7 @@ addEventListener("touchmove", e => { const t = e.touches[0]; if (t) onPoint(t.cl
 /* load */
 const loader = new GLTFLoader();
 const load = url => new Promise((res, rej) => loader.load(url, g => res(g.scene), undefined, rej));
-const [hRes, aRes] = await Promise.allSettled([load(HEAD_GLB), load(ARM_GLB)]);
+const [hRes, aRes] = lite ? [{ status: "skipped" }, { status: "skipped" }] : await Promise.allSettled([load(HEAD_GLB), load(ARM_GLB)]);
 if (hRes.status === "fulfilled") {
   const m = hRes.value; normaliseHead(m);
   prepareModel(m, { glossy: true, useMap: false, tint: "#3b4560", rim: { color: 0xffc94d, power: 4.5, strength: 0.32 } });
@@ -1092,9 +1108,13 @@ loaderEl.classList.add("hide");
 const m = reduce ? 0.25 : 1; let intro = 0, last = performance.now() / 1000, visible = true;
 let nextBlink = 2.5 + Math.random() * 3.5, blinkT = -1;
 new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) { last = performance.now() / 1000; requestAnimationFrame(tick); } }).observe(hero);
+let lastFrame = 0;
 function tick() {
   if (!visible) return;
-  const t = performance.now() / 1000; const dt = Math.min(t - last, 0.05); last = t;
+  const now = performance.now() / 1000;
+  if (lite && now - lastFrame < 1 / 31) { requestAnimationFrame(tick); return; }
+  lastFrame = now;
+  const t = now; const dt = Math.min(t - last, 0.05); last = t;
   // the robot keeps its eyes on a golden pi: the mouse on desktop, a floating pi otherwise
   const rx = isMobile ? W * 0.5 : Math.max(W * 0.55, 500), ry = isMobile ? H * 0.5 : Math.max(H * 0.55, 400);
   const following = finePtr && mouse.inHero && t - lastMove < 3.5;
@@ -1124,7 +1144,7 @@ function tick() {
   if (blinkT >= 0) { blinkT += dt; const p = blinkT / 0.32; const sy = p < 0.5 ? 1 - p * 2 * 0.92 : 0.08 + (p - 0.5) * 2 * 0.92; eyes.forEach(e => e.scale.y = clamp(sy, 0.08, 1)); if (p >= 1) { blinkT = -1; eyes.forEach(e => e.scale.y = 1); nextBlink = t + 2.5 + Math.random() * 3.5; } }
   floor.scale.set(3.4 - bob * 3, 0.42 - bob * 0.4, 1); floor.material.opacity = 0.7 + (0.09 - bob) * 1.5;
   antennaGlows.forEach(g => g.material.opacity = 0.7 * (0.85 + Math.sin(t * 1.6) * 0.15) + 0.15);
-  composer.render();
+  if (lite) renderer.render(scene, camera); else composer.render();
   requestAnimationFrame(tick);
 }
 requestAnimationFrame(tick);
